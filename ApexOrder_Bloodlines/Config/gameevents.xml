@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configs>
-    <!-- Bloodlines now replaces the vanilla 3.0 starter quest through quests.xml. -->
+    <!--
+        7DTD 3.0.1 first-spawn sequence already waits five seconds in phase 1
+        and applies the vanilla Duke-note buff in phase 2. Add Bloodlines to
+        that same phase so every genuinely new player receives Protocol 01.
+    -->
+    <append xpath="/gameevents/action_sequence[@name='game_first_spawn']">
+        <action class="AddQuest">
+            <property name="phase" value="2"/>
+            <property name="quest" value="quest_ApexBloodlines_01_Awakening"/>
+        </action>
+    </append>
 </configs>
