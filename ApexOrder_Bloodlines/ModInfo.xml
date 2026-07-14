@@ -2,8 +2,8 @@
 <xml>
     <Name value="ApexOrder_Bloodlines"/>
     <DisplayName value="ApexOrder Bloodlines"/>
-    <Description value="A standalone overhaul and progression system for 7 Days to Die."/>
+    <Description value="A standalone overhaul and progression system for 7 Days to Die 3.0.1."/>
     <Author value="ApexOrder"/>
-    <Version value="0.1.0"/>
+    <Version value="0.2.0"/>
     <Website value="https://apexorder.uk"/>
 </xml>
