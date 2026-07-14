@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configs>
-    <!-- Bushes can provide sticks with any valid harvesting action. -->
-    <append xpath="/blocks/block[contains(translate(@name,'BUSH','bush'),'bush')]">
-        <drop event="Harvest" name="ApexBloodlinesResourceStick" count="1" prob="0.35" tag="allHarvest"/>
+    <!-- Bushes and shrubbery provide sticks. -->
+    <append xpath="/blocks/block[contains(translate(@name,'BUSHSHRUB','bushshrub'),'bush') or contains(translate(@name,'BUSHSHRUB','bushshrub'),'shrub')]">
+        <drop event="Harvest" name="ApexBloodlinesResourceStick" count="1" prob="0.40" tag="allHarvest"/>
     </append>
 
-    <!-- Trees provide sticks generally, but bark and branches require an axe-tagged tool. -->
-    <append xpath="/blocks/block[starts-with(@name,'tree') and not(contains(translate(@name,'BUSH','bush'),'bush')) and not(contains(translate(@name,'STUMP','stump'),'stump'))]">
-        <drop event="Harvest" name="ApexBloodlinesResourceStick" count="1" prob="0.20" tag="allHarvest"/>
-        <drop event="Harvest" name="ApexBloodlinesResourceBark" count="1" prob="0.45" tag="axe"/>
-        <drop event="Harvest" name="ApexBloodlinesResourceBranch" count="1" prob="0.12" tag="axe"/>
+    <!-- Add Bloodlines harvests only to real wood-yielding trees. -->
+    <append xpath="/blocks/block[drop[@event='Harvest' and @name='resourceWood' and contains(@tag,'oreWoodHarvest')]]">
+        <drop event="Harvest" name="ApexBloodlinesResourceBark" count="8" tag="ApexBloodlinesAxeHarvest"/>
+        <drop event="Harvest" name="ApexBloodlinesResourceBranch" count="2" tag="ApexBloodlinesAxeHarvest"/>
+        <drop event="Harvest" name="ApexBloodlinesResourceStick" count="2" tag="ApexBloodlinesAxeHarvest"/>
     </append>
 
-    <!-- Sharp stone can be recovered while mining stone-bearing blocks. -->
-    <append xpath="/blocks/block[contains(@name,'terrStone') or contains(@name,'boulder') or contains(@name,'resourceRock') or contains(@name,'rockResource')]">
-        <drop event="Harvest" name="ApexBloodlinesResourceSharpStone" count="1" prob="0.15" tag="allHarvest"/>
+    <!-- Sharp stone is recovered while mining stone-bearing terrain and boulders. -->
+    <append xpath="/blocks/block[drop[@event='Harvest' and @name='resourceRockSmall']]">
+        <drop event="Harvest" name="ApexBloodlinesResourceSharpStone" count="1" prob="0.12" tag="allHarvest"/>
     </append>
 </configs>
