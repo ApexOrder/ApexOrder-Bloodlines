@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configs>
     <!--
-        7DTD 3.0.1 first-spawn sequence already waits five seconds in phase 1
-        and applies the vanilla Duke-note buff in phase 2. Add Bloodlines to
-        that same phase so every genuinely new player receives Protocol 01.
+        7DTD 3.0.1 awards its opening quest from the
+        challenge_group_reward_basics action sequence.
+        Redirect that exact vanilla AddQuest action to Bloodlines.
     -->
-    <append xpath="/gameevents/action_sequence[@name='game_first_spawn']">
-        <action class="AddQuest">
-            <property name="phase" value="2"/>
-            <property name="quest" value="quest_ApexBloodlines_01_Awakening"/>
-        </action>
-    </append>
+    <setattribute
+        xpath="/gameevents/action_sequence[@name='challenge_group_reward_basics']/action[@class='AddQuest']/property[@name='quest' and @value='quest_whiteRiverCitizen1']"
+        name="value">quest_ApexBloodlines_01_Awakening</setattribute>
 </configs>
