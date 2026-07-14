@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+    <append xpath="/quests">
+        <quest id="quest_ApexBloodlines_01_Awakening">
+            <property name="group_name_key" value="quest_ApexBloodlines_Group"/>
+            <property name="name_key" value="quest_ApexBloodlines_01_name"/>
+            <property name="subtitle_key" value="quest_ApexBloodlines_01_subtitle"/>
+            <property name="description_key" value="quest_ApexBloodlines_01_description"/>
+            <property name="shareable" value="false"/>
+            <objective type="FetchKeep" id="resourceYuccaFibers" value="15" phase="1"/>
+            <objective type="FetchKeep" id="ApexBloodlinesResourceStick" value="6" phase="1"/>
+            <objective type="FetchKeep" id="resourceRockSmall" value="8" phase="1"/>
+            <reward type="Exp" value="100"/>
+            <reward type="Quest" id="quest_ApexBloodlines_02_WovenFoundations"><property name="chainquest" value="true"/></reward>
+        </quest>
+
+        <quest id="quest_ApexBloodlines_02_WovenFoundations">
+            <property name="group_name_key" value="quest_ApexBloodlines_Group"/>
+            <property name="name_key" value="quest_ApexBloodlines_02_name"/>
+            <property name="subtitle_key" value="quest_ApexBloodlines_02_subtitle"/>
+            <property name="description_key" value="quest_ApexBloodlines_02_description"/>
+            <property name="shareable" value="false"/>
+            <objective type="Craft" id="ApexBloodlinesResourceRope" value="3" phase="1"/>
+            <reward type="Exp" value="100"/>
+            <reward type="Quest" id="quest_ApexBloodlines_03_CrudeIndustry"><property name="chainquest" value="true"/></reward>
+        </quest>
+
+        <quest id="quest_ApexBloodlines_03_CrudeIndustry">
+            <property name="group_name_key" value="quest_ApexBloodlines_Group"/>
+            <property name="name_key" value="quest_ApexBloodlines_03_name"/>
+            <property name="subtitle_key" value="quest_ApexBloodlines_03_subtitle"/>
+            <property name="description_key" value="quest_ApexBloodlines_03_description"/>
+            <property name="shareable" value="false"/>
+            <objective type="Craft" id="ApexBloodlinesToolCrudeAxe" value="1" phase="1"/>
+            <reward type="Exp" value="150"/>
+            <reward type="Quest" id="quest_ApexBloodlines_04_PrimitiveProtection"><property name="chainquest" value="true"/></reward>
+        </quest>
+
+        <quest id="quest_ApexBloodlines_04_PrimitiveProtection">
+            <property name="group_name_key" value="quest_ApexBloodlines_Group"/>
+            <property name="name_key" value="quest_ApexBloodlines_04_name"/>
+            <property name="subtitle_key" value="quest_ApexBloodlines_04_subtitle"/>
+            <property name="description_key" value="quest_ApexBloodlines_04_description"/>
+            <property name="shareable" value="false"/>
+            <objective type="FetchKeep" id="ApexBloodlinesResourceBranch" value="1" phase="1"/>
+            <objective type="FetchKeep" id="ApexBloodlinesResourceStick" value="10" phase="1"/>
+            <objective type="FetchKeep" id="ApexBloodlinesResourceBark" value="28" phase="1"/>
+            <objective type="FetchKeep" id="ApexBloodlinesResourceSharpStone" value="2" phase="1"/>
+            <objective type="FetchKeep" id="ApexBloodlinesResourceRope" value="9" phase="1"/>
+            <objective type="Craft" id="ApexBloodlinesWeaponCrudePike" value="1" phase="2"/>
+            <objective type="Craft" id="ApexBloodlinesArmorBarkHelmet" value="1" phase="2"/>
+            <objective type="Craft" id="ApexBloodlinesArmorBarkOutfit" value="1" phase="2"/>
+            <objective type="Craft" id="ApexBloodlinesArmorBarkGloves" value="1" phase="2"/>
+            <objective type="Craft" id="ApexBloodlinesArmorBarkBoots" value="1" phase="2"/>
+            <objective type="Wear" id="ApexBloodlinesArmorBarkHelmet" value="1" phase="3"/>
+            <objective type="Wear" id="ApexBloodlinesArmorBarkOutfit" value="1" phase="3"/>
+            <objective type="Wear" id="ApexBloodlinesArmorBarkGloves" value="1" phase="3"/>
+            <objective type="Wear" id="ApexBloodlinesArmorBarkBoots" value="1" phase="3"/>
+            <reward type="Exp" value="300"/>
+            <reward type="Quest" id="quest_ApexBloodlines_05_EstablishShelter"><property name="chainquest" value="true"/></reward>
+        </quest>
+
+        <quest id="quest_ApexBloodlines_05_EstablishShelter">
+            <property name="group_name_key" value="quest_ApexBloodlines_Group"/>
+            <property name="name_key" value="quest_ApexBloodlines_05_name"/>
+            <property name="subtitle_key" value="quest_ApexBloodlines_05_subtitle"/>
+            <property name="description_key" value="quest_ApexBloodlines_05_description"/>
+            <property name="shareable" value="false"/>
+            <objective type="Craft" id="bedroll" value="1" phase="1"/>
+            <objective type="BlockPlace" id="bedroll" value="1" phase="2"/>
+            <objective type="Craft" id="campfire" value="1" phase="3"/>
+            <objective type="BlockPlace" id="campfire" value="1" phase="4"/>
+            <reward type="Exp" value="200"/>
+            <reward type="Quest" id="quest_ApexBloodlines_06_FirstBlood"><property name="chainquest" value="true"/></reward>
+        </quest>
+
+        <quest id="quest_ApexBloodlines_06_FirstBlood">
+            <property name="group_name_key" value="quest_ApexBloodlines_Group"/>
+            <property name="name_key" value="quest_ApexBloodlines_06_name"/>
+            <property name="subtitle_key" value="quest_ApexBloodlines_06_subtitle"/>
+            <property name="description_key" value="quest_ApexBloodlines_06_description"/>
+            <property name="shareable" value="false"/>
+            <objective type="EntityKill" id="zombie" value="5" phase="1"/>
+            <reward type="Exp" value="300"/>
+            <reward type="Item" id="gunHandgunT0PipePistol" value="1"/>
+            <reward type="Item" id="ammo9mmBulletBall" value="25"/>
+            <reward type="Item" id="ApexBloodlinesTransmission" value="1"/>
+            <reward type="Quest" id="quest_ApexBloodlines_07_Transmission"><property name="chainquest" value="true"/></reward>
+        </quest>
+
+        <quest id="quest_ApexBloodlines_07_Transmission">
+            <property name="group_name_key" value="quest_ApexBloodlines_Group"/>
+            <property name="name_key" value="quest_ApexBloodlines_07_name"/>
+            <property name="subtitle_key" value="quest_ApexBloodlines_07_subtitle"/>
+            <property name="description_key" value="quest_ApexBloodlines_07_description"/>
+            <property name="shareable" value="false"/>
+            <objective type="FetchKeep" id="ApexBloodlinesTransmission" value="1" phase="1"/>
+            <reward type="Exp" value="100"/>
+            <reward type="Quest" id="quest_whiteRiverCitizen"><property name="chainquest" value="true"/></reward>
+        </quest>
+    </append>
+</configs>
