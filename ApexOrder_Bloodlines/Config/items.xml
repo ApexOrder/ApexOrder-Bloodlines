@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+    <append xpath="/items">
+        <item name="ApexBloodlinesResourceStick">
+            <property name="Extends" value="resourceWood"/>
+            <property name="CustomIcon" value="resourceWood"/>
+            <property name="CustomIconTint" value="B08B5B"/>
+            <property name="DescriptionKey" value="ApexBloodlinesResourceStickDesc"/>
+            <property name="EconomicValue" value="1"/>
+            <property name="Stacknumber" value="500"/>
+        </item>
+        <item name="ApexBloodlinesResourceRope">
+            <property name="Extends" value="resourceCloth"/>
+            <property name="CustomIcon" value="resourceYuccaFibers"/>
+            <property name="CustomIconTint" value="9B7653"/>
+            <property name="DescriptionKey" value="ApexBloodlinesResourceRopeDesc"/>
+            <property name="EconomicValue" value="2"/>
+            <property name="Stacknumber" value="500"/>
+        </item>
+        <item name="ApexBloodlinesResourceBranch">
+            <property name="Extends" value="resourceWood"/>
+            <property name="CustomIcon" value="resourceWood"/>
+            <property name="CustomIconTint" value="704A2C"/>
+            <property name="DescriptionKey" value="ApexBloodlinesResourceBranchDesc"/>
+            <property name="EconomicValue" value="2"/>
+            <property name="Stacknumber" value="500"/>
+        </item>
+        <item name="ApexBloodlinesResourceBark">
+            <property name="Extends" value="resourceWood"/>
+            <property name="CustomIcon" value="resourceWood"/>
+            <property name="CustomIconTint" value="4F3828"/>
+            <property name="DescriptionKey" value="ApexBloodlinesResourceBarkDesc"/>
+            <property name="EconomicValue" value="1"/>
+            <property name="Stacknumber" value="500"/>
+        </item>
+        <item name="ApexBloodlinesResourceSharpStone">
+            <property name="Extends" value="resourceRockSmall"/>
+            <property name="CustomIcon" value="resourceRockSmall"/>
+            <property name="DescriptionKey" value="ApexBloodlinesResourceSharpStoneDesc"/>
+            <property name="EconomicValue" value="2"/>
+            <property name="Stacknumber" value="500"/>
+        </item>
+        <item name="ApexBloodlinesToolCrudeAxe">
+            <property name="Extends" value="meleeToolRepairT0StoneAxe"/>
+            <property name="CustomIcon" value="meleeToolRepairT0StoneAxe"/>
+            <property name="DescriptionKey" value="ApexBloodlinesToolCrudeAxeDesc"/>
+            <property name="EconomicValue" value="10"/>
+        </item>
+        <item name="ApexBloodlinesWeaponCrudePike">
+            <property name="Extends" value="meleeWpnSpearT0StoneSpear"/>
+            <property name="CustomIcon" value="meleeWpnSpearT0StoneSpear"/>
+            <property name="DescriptionKey" value="ApexBloodlinesWeaponCrudePikeDesc"/>
+            <property name="EconomicValue" value="12"/>
+        </item>
+        <item name="ApexBloodlinesArmorBarkHelmet"><property name="Extends" value="armorPrimitiveHelmet"/><property name="DescriptionKey" value="ApexBloodlinesArmorBarkHelmetDesc"/></item>
+        <item name="ApexBloodlinesArmorBarkOutfit"><property name="Extends" value="armorPrimitiveOutfit"/><property name="DescriptionKey" value="ApexBloodlinesArmorBarkOutfitDesc"/></item>
+        <item name="ApexBloodlinesArmorBarkGloves"><property name="Extends" value="armorPrimitiveGloves"/><property name="DescriptionKey" value="ApexBloodlinesArmorBarkGlovesDesc"/></item>
+        <item name="ApexBloodlinesArmorBarkBoots"><property name="Extends" value="armorPrimitiveBoots"/><property name="DescriptionKey" value="ApexBloodlinesArmorBarkBootsDesc"/></item>
+        <item name="ApexBloodlinesTransmission">
+            <property name="Extends" value="resourcePaper"/>
+            <property name="CustomIcon" value="resourcePaper"/>
+            <property name="CustomIconTint" value="00C878"/>
+            <property name="DescriptionKey" value="ApexBloodlinesTransmissionDesc"/>
+            <property name="EconomicValue" value="0"/>
+            <property name="Stacknumber" value="1"/>
+        </item>
+    </append>
+</configs>
