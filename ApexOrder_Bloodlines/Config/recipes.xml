@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configs>
+    <!-- 7DTD 3.0 glue patch: remove cooking-pot requirement and consume one empty jar. -->
+    <removeattribute xpath="/recipes/recipe[@name='resourceGlue' and @craft_area='campfire']/@craft_tool"/>
+    <append xpath="/recipes/recipe[@name='resourceGlue' and @craft_area='campfire']">
+        <ingredient name="drinkJarEmpty" count="1"/>
+    </append>
+
     <append xpath="/recipes">
         <recipe name="ApexBloodlinesResourceRope" count="1" craft_time="3">
             <ingredient name="resourceYuccaFibers" count="5"/>
