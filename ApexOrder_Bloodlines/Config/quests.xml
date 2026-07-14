@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configs>
-    <!-- Replace the vanilla 3.0.1 starter quest with Bloodlines. -->
-    <setattribute xpath="/quests" name="starter_quest">quest_ApexBloodlines_01_Awakening</setattribute>
-
     <append xpath="/quests">
         <quest id="quest_ApexBloodlines_01_Awakening">
             <property name="group_name_key" value="quest_ApexBloodlines_Group"/>
