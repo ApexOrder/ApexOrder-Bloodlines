@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+    <removeattribute xpath="/recipes/recipe[@name='resourceGlue' and @craft_area='campfire']/@craft_tool"/>
+    <append xpath="/recipes/recipe[@name='resourceGlue' and @craft_area='campfire']">
+        <ingredient name="drinkCanEmpty" count="1"/>
+    </append>
+    <append xpath="/recipes">
+        <recipe name="ApexBloodlinesResourceRope" count="1" craft_time="3">
+            <ingredient name="resourceYuccaFibers" count="5"/>
+        </recipe>
+        <recipe name="ApexBloodlinesToolCrudeAxe" count="1" craft_time="8">
+            <ingredient name="ApexBloodlinesResourceRope" count="2"/>
+            <ingredient name="ApexBloodlinesResourceStick" count="2"/>
+            <ingredient name="resourceRockSmall" count="3"/>
+        </recipe>
+        <recipe name="ApexBloodlinesWeaponCrudePike" count="1" craft_time="10">
+            <ingredient name="ApexBloodlinesResourceBranch" count="1"/>
+            <ingredient name="ApexBloodlinesResourceRope" count="2"/>
+            <ingredient name="ApexBloodlinesResourceSharpStone" count="2"/>
+        </recipe>
+        <recipe name="ApexBloodlinesArmorBarkHelmet" count="1" craft_time="8">
+            <ingredient name="ApexBloodlinesResourceBark" count="4"/><ingredient name="ApexBloodlinesResourceRope" count="1"/><ingredient name="ApexBloodlinesResourceStick" count="2"/>
+        </recipe>
+        <recipe name="ApexBloodlinesArmorBarkOutfit" count="1" craft_time="15">
+            <ingredient name="ApexBloodlinesResourceBark" count="12"/><ingredient name="ApexBloodlinesResourceRope" count="3"/><ingredient name="ApexBloodlinesResourceStick" count="4"/>
+        </recipe>
+        <recipe name="ApexBloodlinesArmorBarkGloves" count="1" craft_time="8">
+            <ingredient name="ApexBloodlinesResourceBark" count="5"/><ingredient name="ApexBloodlinesResourceRope" count="1"/><ingredient name="ApexBloodlinesResourceStick" count="2"/>
+        </recipe>
+        <recipe name="ApexBloodlinesArmorBarkBoots" count="1" craft_time="10">
+            <ingredient name="ApexBloodlinesResourceBark" count="7"/><ingredient name="ApexBloodlinesResourceRope" count="2"/><ingredient name="ApexBloodlinesResourceStick" count="2"/>
+        </recipe>
+    </append>
+</configs>
