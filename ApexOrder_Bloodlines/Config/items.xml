@@ -9,6 +9,7 @@
             <property name="EconomicValue" value="1"/>
             <property name="Stacknumber" value="500"/>
         </item>
+
         <item name="ApexBloodlinesResourceRope">
             <property name="Extends" value="resourceCloth"/>
             <property name="CustomIcon" value="resourceYuccaFibers"/>
@@ -17,6 +18,7 @@
             <property name="EconomicValue" value="2"/>
             <property name="Stacknumber" value="500"/>
         </item>
+
         <item name="ApexBloodlinesResourceBranch">
             <property name="Extends" value="resourceWood"/>
             <property name="CustomIcon" value="resourceWood"/>
@@ -25,6 +27,7 @@
             <property name="EconomicValue" value="2"/>
             <property name="Stacknumber" value="500"/>
         </item>
+
         <item name="ApexBloodlinesResourceBark">
             <property name="Extends" value="resourceWood"/>
             <property name="CustomIcon" value="resourceWood"/>
@@ -33,29 +36,94 @@
             <property name="EconomicValue" value="1"/>
             <property name="Stacknumber" value="500"/>
         </item>
+
         <item name="ApexBloodlinesResourceSharpStone">
             <property name="Extends" value="resourceRockSmall"/>
             <property name="CustomIcon" value="resourceRockSmall"/>
+            <property name="CustomIconTint" value="B7B7B7"/>
             <property name="DescriptionKey" value="ApexBloodlinesResourceSharpStoneDesc"/>
             <property name="EconomicValue" value="2"/>
             <property name="Stacknumber" value="500"/>
         </item>
+
         <item name="ApexBloodlinesToolCrudeAxe">
             <property name="Extends" value="meleeToolRepairT0StoneAxe"/>
+            <property name="Tags" value="T0,axe,melee,light,tool,longShaft,repairTool,miningTool,ApexBloodlinesCrudeAxe,canHaveCosmetic,harvestingSkill"/>
             <property name="CustomIcon" value="meleeToolRepairT0StoneAxe"/>
+            <property name="CustomIconTint" value="8A6A43"/>
             <property name="DescriptionKey" value="ApexBloodlinesToolCrudeAxeDesc"/>
-            <property name="EconomicValue" value="10"/>
+            <property name="EconomicValue" value="25"/>
+            <property name="ShowQuality" value="false"/>
+            <stats>
+                <stat name="EntityDamage" value="0,0,1,0,.1"/>
+                <stat name="BlockDamage" value="0,0,1,0,.1"/>
+                <stat name="AttacksPerMinute" value="0,0,1,0,.02"/>
+                <stat name="StaminaLoss" value="0,0,1,-.1,0"/>
+                <stat name="DegradationMax" value="0,0,1,0,.1"/>
+            </stats>
+            <effect_group name="ApexBloodlinesToolCrudeAxe">
+                <passive_effect name="AttacksPerMinute" operation="base_set" value="88" tags="axe"/>
+                <passive_effect name="StaminaLoss" operation="base_set" value="11" tags="primary"/>
+                <passive_effect name="DegradationMax" operation="base_set" value="180"/>
+                <passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+                <passive_effect name="MaxRange" operation="base_set" value="2.4"/>
+                <passive_effect name="BlockRange" operation="base_set" value="3"/>
+                <passive_effect name="EntityDamage" operation="base_set" value="5"/>
+                <passive_effect name="BlockDamage" operation="base_set" value="18"/>
+                <passive_effect name="HarvestCount" operation="base_set" value="1" tags="ApexBloodlinesAxeHarvest"/>
+            </effect_group>
         </item>
+
         <item name="ApexBloodlinesWeaponCrudePike">
             <property name="Extends" value="meleeWpnSpearT0StoneSpear"/>
+            <property name="Tags" value="T0,melee,medium,weapon,meleeWeapon,longShaft,spearSkill"/>
             <property name="CustomIcon" value="meleeWpnSpearT0StoneSpear"/>
+            <property name="CustomIconTint" value="725438"/>
             <property name="DescriptionKey" value="ApexBloodlinesWeaponCrudePikeDesc"/>
-            <property name="EconomicValue" value="12"/>
+            <property name="EconomicValue" value="30"/>
+            <property name="ShowQuality" value="false"/>
+            <stats>
+                <stat name="EntityDamage" value="0,0,1,0,.1"/>
+                <stat name="BlockDamage" value="0,0,1,0,.1"/>
+                <stat name="AttacksPerMinute" value="0,0,1,0,.02"/>
+                <stat name="StaminaLoss" value="0,0,1,-.01,0"/>
+                <stat name="DegradationMax" value="0,0,1,0,.1"/>
+            </stats>
+            <effect_group name="ApexBloodlinesWeaponCrudePike">
+                <passive_effect name="AttacksPerMinute" operation="base_set" value="70" tags="primary"/>
+                <passive_effect name="StaminaLoss" operation="base_set" value="12" tags="primary"/>
+                <passive_effect name="DegradationMax" operation="base_set" value="160"/>
+                <passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+                <passive_effect name="EntityDamage" operation="base_set" value="10" tags="primary"/>
+                <passive_effect name="BlockDamage" operation="base_set" value="6" tags="primary"/>
+            </effect_group>
         </item>
-        <item name="ApexBloodlinesArmorBarkHelmet"><property name="Extends" value="armorPrimitiveHelmet"/><property name="DescriptionKey" value="ApexBloodlinesArmorBarkHelmetDesc"/></item>
-        <item name="ApexBloodlinesArmorBarkOutfit"><property name="Extends" value="armorPrimitiveOutfit"/><property name="DescriptionKey" value="ApexBloodlinesArmorBarkOutfitDesc"/></item>
-        <item name="ApexBloodlinesArmorBarkGloves"><property name="Extends" value="armorPrimitiveGloves"/><property name="DescriptionKey" value="ApexBloodlinesArmorBarkGlovesDesc"/></item>
-        <item name="ApexBloodlinesArmorBarkBoots"><property name="Extends" value="armorPrimitiveBoots"/><property name="DescriptionKey" value="ApexBloodlinesArmorBarkBootsDesc"/></item>
+
+        <item name="ApexBloodlinesArmorBarkHelmet">
+            <property name="Extends" value="armorPrimitiveHelmet"/>
+            <property name="CustomIcon" value="armorPrimitiveHelmet"/>
+            <property name="CustomIconTint" value="5C432E"/>
+            <property name="DescriptionKey" value="ApexBloodlinesArmorBarkHelmetDesc"/>
+        </item>
+        <item name="ApexBloodlinesArmorBarkOutfit">
+            <property name="Extends" value="armorPrimitiveOutfit"/>
+            <property name="CustomIcon" value="armorPrimitiveOutfit"/>
+            <property name="CustomIconTint" value="5C432E"/>
+            <property name="DescriptionKey" value="ApexBloodlinesArmorBarkOutfitDesc"/>
+        </item>
+        <item name="ApexBloodlinesArmorBarkGloves">
+            <property name="Extends" value="armorPrimitiveGloves"/>
+            <property name="CustomIcon" value="armorPrimitiveGloves"/>
+            <property name="CustomIconTint" value="5C432E"/>
+            <property name="DescriptionKey" value="ApexBloodlinesArmorBarkGlovesDesc"/>
+        </item>
+        <item name="ApexBloodlinesArmorBarkBoots">
+            <property name="Extends" value="armorPrimitiveBoots"/>
+            <property name="CustomIcon" value="armorPrimitiveBoots"/>
+            <property name="CustomIconTint" value="5C432E"/>
+            <property name="DescriptionKey" value="ApexBloodlinesArmorBarkBootsDesc"/>
+        </item>
+
         <item name="ApexBloodlinesTransmission">
             <property name="Extends" value="resourcePaper"/>
             <property name="CustomIcon" value="resourcePaper"/>
