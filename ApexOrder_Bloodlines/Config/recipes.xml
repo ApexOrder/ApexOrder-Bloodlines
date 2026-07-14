@@ -42,18 +42,5 @@
             <ingredient name="ApexBloodlinesResourceRope" count="2"/>
             <ingredient name="ApexBloodlinesResourceStick" count="2"/>
         </recipe>
-
-        <!-- Every vanilla 3.0 bedroll colour is available as an explicit craft. -->
-        <recipe name="bedroll" count="1" tags="packMuleCrafting"><ingredient name="resourceYuccaFibers" count="10"/></recipe>
-        <recipe name="bedrollRed" count="1" tags="packMuleCrafting"><ingredient name="resourceYuccaFibers" count="10"/></recipe>
-        <recipe name="bedrollOrange" count="1" tags="packMuleCrafting"><ingredient name="resourceYuccaFibers" count="10"/></recipe>
-        <recipe name="bedrollYellow" count="1" tags="packMuleCrafting"><ingredient name="resourceYuccaFibers" count="10"/></recipe>
-        <recipe name="bedrollGreen" count="1" tags="packMuleCrafting"><ingredient name="resourceYuccaFibers" count="10"/></recipe>
-        <recipe name="bedrollBlue" count="1" tags="packMuleCrafting"><ingredient name="resourceYuccaFibers" count="10"/></recipe>
-        <recipe name="bedrollPurple" count="1" tags="packMuleCrafting"><ingredient name="resourceYuccaFibers" count="10"/></recipe>
-        <recipe name="bedrollPink" count="1" tags="packMuleCrafting"><ingredient name="resourceYuccaFibers" count="10"/></recipe>
-        <recipe name="bedrollGrey" count="1" tags="packMuleCrafting"><ingredient name="resourceYuccaFibers" count="10"/></recipe>
-        <recipe name="bedrollWhite" count="1" tags="packMuleCrafting"><ingredient name="resourceYuccaFibers" count="10"/></recipe>
-        <recipe name="bedrollArmyGreen" count="1" tags="packMuleCrafting"><ingredient name="resourceYuccaFibers" count="10"/></recipe>
     </append>
 </configs>
