@@ -1,9 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Config>
-    <append xpath="/gameevents/action_sequence[@name='game_first_spawn']">
-        <action class="AddQuest">
-            <property name="phase" value="2"/>
-            <property name="quest" value="quest_ApexBloodlines_01_Awakening"/>
-        </action>
-    </append>
-</Config>
+<configs>
+    <!-- Bloodlines now replaces the vanilla 3.0 starter quest through quests.xml. -->
+</configs>
