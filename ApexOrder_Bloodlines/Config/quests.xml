@@ -82,9 +82,9 @@
             <property name="add_to_tier_complete" value="false"/>
             <property name="shareable" value="false"/>
             <objective type="Craft" id="bedrollBlockVariantHelper" value="1" phase="1"/>
-            <objective type="BlockPlace" block="bedrollBlockVariantHelper" value="1" phase="2"/>
+            <objective type="BlockPlace" id="bedrollBlockVariantHelper" value="1" phase="2"/>
             <objective type="Craft" id="campfire" value="1" phase="3"/>
-            <objective type="BlockPlace" block="campfire" value="1" phase="4"/>
+            <objective type="BlockPlace" id="campfire" value="1" phase="4"/>
             <reward type="Exp" value="200"/>
             <reward type="Quest" id="quest_ApexBloodlines_06_FirstBlood"/>
         </quest>
@@ -98,7 +98,7 @@
             <property name="category_key" value="quest"/>
             <property name="add_to_tier_complete" value="false"/>
             <property name="shareable" value="false"/>
-            <objective type="EntityKill" id="zombie" value="5" phase="1"/>
+            <objective type="EntityKill" target_tags="zombie" needed_count="5" phase="1"/>
             <reward type="Exp" value="300"/>
             <reward type="Item" id="gunHandgunT0PipePistol" value="1"/>
             <reward type="Item" id="ammo9mmBulletBall" value="25"/>
