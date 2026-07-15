@@ -99,10 +99,6 @@
             <property name="add_to_tier_complete" value="false"/>
             <property name="shareable" value="false"/>
             <objective type="EntityKill" target_tags="zombie" needed_count="5" phase="1"/>
-            <reward type="Exp" value="300"/>
-            <reward type="Item" id="gunHandgunT0PipePistol" value="1"/>
-            <reward type="Item" id="ammo9mmBulletBall" value="25"/>
-            <reward type="Item" id="ApexBloodlinesTransmission" value="1"/>
             <reward type="Quest" id="quest_ApexBloodlines_07_Transmission"/>
         </quest>
 
@@ -111,13 +107,27 @@
             <property name="name_key" value="quest_ApexBloodlines_07_name"/>
             <property name="subtitle_key" value="quest_ApexBloodlines_07_subtitle"/>
             <property name="description_key" value="quest_ApexBloodlines_07_description"/>
-            <property name="icon" value="ui_game_symbol_quest"/>
+            <property name="icon" value="ui_game_symbol_map_trader"/>
             <property name="category_key" value="quest"/>
             <property name="add_to_tier_complete" value="false"/>
             <property name="shareable" value="false"/>
-            <objective type="FetchKeep" id="ApexBloodlinesTransmission" value="1" phase="1"/>
-            <reward type="Exp" value="100"/>
-            <reward type="Quest" id="quest_whiteRiverCitizen1"/>
+            <property name="completiontype" value="TurnIn"/>
+            <property name="completion_key" value="quest_ApexBloodlines_07_completion"/>
+
+            <objective type="Goto" id="trader" value="5" phase="1">
+                <property name="nav_object" value="go_to_trader"/>
+            </objective>
+
+            <objective type="InteractWithNPC">
+                <property name="phase" value="2"/>
+                <property name="nav_object" value="return_to_trader"/>
+                <property name="use_closest" value="true"/>
+            </objective>
+
+            <reward type="Exp" value="400"/>
+            <reward type="Item" id="gunHandgunT0PipePistol" value="1"/>
+            <reward type="Item" id="ammo9mmBulletBall" value="25"/>
+            <reward type="Item" id="ApexBloodlinesTransmission" value="1"/>
         </quest>
     </append>
 </configs>
