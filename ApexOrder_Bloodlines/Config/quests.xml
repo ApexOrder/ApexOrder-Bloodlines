@@ -26,7 +26,7 @@
             <property name="category_key" value="quest"/>
             <property name="add_to_tier_complete" value="false"/>
             <property name="shareable" value="false"/>
-            <objective type="Craft" id="ApexBloodlinesResourceRope" count="3" phase="1"/>
+            <objective type="Craft" id="ApexBloodlinesResourceRope" value="3" phase="1"/>
             <reward type="Exp" value="100"/>
             <reward type="Quest" id="quest_ApexBloodlines_03_CrudeIndustry"/>
         </quest>
@@ -40,7 +40,7 @@
             <property name="category_key" value="quest"/>
             <property name="add_to_tier_complete" value="false"/>
             <property name="shareable" value="false"/>
-            <objective type="Craft" id="ApexBloodlinesToolCrudeAxe" count="1" phase="1"/>
+            <objective type="Craft" id="ApexBloodlinesToolCrudeAxe" value="1" phase="1"/>
             <reward type="Exp" value="150"/>
             <reward type="Quest" id="quest_ApexBloodlines_04_PrimitiveProtection"/>
         </quest>
@@ -59,11 +59,11 @@
             <objective type="FetchKeep" id="ApexBloodlinesResourceBark" value="28" phase="1"/>
             <objective type="FetchKeep" id="ApexBloodlinesResourceSharpStone" value="2" phase="1"/>
             <objective type="FetchKeep" id="ApexBloodlinesResourceRope" value="9" phase="1"/>
-            <objective type="Craft" id="ApexBloodlinesWeaponCrudePike" count="1" phase="2"/>
-            <objective type="Craft" id="ApexBloodlinesArmorBarkHelmet" count="1" phase="2"/>
-            <objective type="Craft" id="ApexBloodlinesArmorBarkOutfit" count="1" phase="2"/>
-            <objective type="Craft" id="ApexBloodlinesArmorBarkGloves" count="1" phase="2"/>
-            <objective type="Craft" id="ApexBloodlinesArmorBarkBoots" count="1" phase="2"/>
+            <objective type="Craft" id="ApexBloodlinesWeaponCrudePike" value="1" phase="2"/>
+            <objective type="Craft" id="ApexBloodlinesArmorBarkHelmet" value="1" phase="2"/>
+            <objective type="Craft" id="ApexBloodlinesArmorBarkOutfit" value="1" phase="2"/>
+            <objective type="Craft" id="ApexBloodlinesArmorBarkGloves" value="1" phase="2"/>
+            <objective type="Craft" id="ApexBloodlinesArmorBarkBoots" value="1" phase="2"/>
             <objective type="Wear" item="ApexBloodlinesArmorBarkHelmet" phase="3"/>
             <objective type="Wear" item="ApexBloodlinesArmorBarkOutfit" phase="3"/>
             <objective type="Wear" item="ApexBloodlinesArmorBarkGloves" phase="3"/>
@@ -81,10 +81,10 @@
             <property name="category_key" value="quest"/>
             <property name="add_to_tier_complete" value="false"/>
             <property name="shareable" value="false"/>
-            <objective type="Craft" id="bedrollBlockVariantHelper" count="1" phase="1"/>
-            <objective type="BlockPlace" block="bedrollBlockVariantHelper" count="1" phase="2"/>
-            <objective type="Craft" id="campfire" count="1" phase="3"/>
-            <objective type="BlockPlace" block="campfire" count="1" phase="4"/>
+            <objective type="Craft" id="bedrollBlockVariantHelper" value="1" phase="1"/>
+            <objective type="BlockPlace" block="bedrollBlockVariantHelper" value="1" phase="2"/>
+            <objective type="Craft" id="campfire" value="1" phase="3"/>
+            <objective type="BlockPlace" block="campfire" value="1" phase="4"/>
             <reward type="Exp" value="200"/>
             <reward type="Quest" id="quest_ApexBloodlines_06_FirstBlood"/>
         </quest>
