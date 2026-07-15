@@ -64,10 +64,10 @@
             <objective type="Craft" id="ApexBloodlinesArmorBarkOutfit" value="1" phase="2"/>
             <objective type="Craft" id="ApexBloodlinesArmorBarkGloves" value="1" phase="2"/>
             <objective type="Craft" id="ApexBloodlinesArmorBarkBoots" value="1" phase="2"/>
-            <objective type="Wear" item="ApexBloodlinesArmorBarkHelmet" phase="3"/>
-            <objective type="Wear" item="ApexBloodlinesArmorBarkOutfit" phase="3"/>
-            <objective type="Wear" item="ApexBloodlinesArmorBarkGloves" phase="3"/>
-            <objective type="Wear" item="ApexBloodlinesArmorBarkBoots" phase="3"/>
+            <objective type="Wear" id="ApexBloodlinesArmorBarkHelmet" value="1" phase="3"/>
+            <objective type="Wear" id="ApexBloodlinesArmorBarkOutfit" value="1" phase="3"/>
+            <objective type="Wear" id="ApexBloodlinesArmorBarkGloves" value="1" phase="3"/>
+            <objective type="Wear" id="ApexBloodlinesArmorBarkBoots" value="1" phase="3"/>
             <reward type="Exp" value="300"/>
             <reward type="Quest" id="quest_ApexBloodlines_05_EstablishShelter"/>
         </quest>
