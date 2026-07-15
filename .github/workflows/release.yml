@@ -14,6 +14,8 @@ permissions:
 jobs:
   validate-and-package:
     runs-on: ubuntu-latest
+    env:
+      PUBLIC_RELEASE_REPO: ApexOrder/Bloodlines-Releases
 
     steps:
       - name: Check out repository
@@ -36,7 +38,7 @@ jobs:
           TAG="${{ github.event.release.tag_name }}"
 
           if [[ "$TAG" != v* ]]; then
-            echo "Release tag must start with v, for example v0.1.0"
+            echo "Private Bloodlines release tag must start with v, for example v0.3.0"
             exit 1
           fi
 
@@ -44,23 +46,41 @@ jobs:
           TAG_VERSION=${TAG#v}
 
           if [ "$VERSION" != "$TAG_VERSION" ]; then
-            echo "ApexOrder_Bloodlines/version.txt ($VERSION) does not match release tag ($TAG)"
+            echo "ApexOrder_Bloodlines/version.txt ($VERSION) does not match private release tag ($TAG)"
             echo "Update version.txt before publishing the release."
             exit 1
           fi
+
+          echo "MOD_VERSION=$VERSION" >> "$GITHUB_ENV"
+          echo "PUBLIC_TAG=bloodlines-v$VERSION" >> "$GITHUB_ENV"
 
       - name: Build release ZIP
         if: github.event_name == 'release'
         shell: bash
         run: |
-          TAG="${{ github.event.release.tag_name }}"
-          zip -r "ApexOrder-Bloodlines-${TAG}.zip" ApexOrder_Bloodlines
+          zip -r "ApexOrder-Bloodlines-${PUBLIC_TAG}.zip" ApexOrder_Bloodlines
 
-      - name: Attach package to GitHub release
+      - name: Attach package to private GitHub release
         if: github.event_name == 'release'
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ github.event.release.tag_name }}
           files: |
-            ApexOrder-Bloodlines-${{ github.event.release.tag_name }}.zip
+            ApexOrder-Bloodlines-${{ env.PUBLIC_TAG }}.zip
+            manifest.json
+
+      - name: Publish Bloodlines package to public releases repo
+        if: github.event_name == 'release'
+        uses: softprops/action-gh-release@v2
+        with:
+          repository: ${{ env.PUBLIC_RELEASE_REPO }}
+          token: ${{ secrets.RELEASES_REPO_TOKEN }}
+          tag_name: ${{ env.PUBLIC_TAG }}
+          name: ApexOrder Bloodlines ${{ env.MOD_VERSION }}
+          body: |
+            Public Bloodlines mod package for players.
+
+            The launcher downloads `ApexOrder-Bloodlines-${{ env.PUBLIC_TAG }}.zip` and uses `manifest.json` for verification and repair.
+          files: |
+            ApexOrder-Bloodlines-${{ env.PUBLIC_TAG }}.zip
             manifest.json
