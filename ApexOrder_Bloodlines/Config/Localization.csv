@@ -42,6 +42,7 @@ quest_ApexBloodlines_05_description,quests,Quest,false,false,"Craft any availabl
 quest_ApexBloodlines_06_name,quests,Quest,false,false,PROTOCOL 06 - FIRST BLOOD
 quest_ApexBloodlines_06_subtitle,quests,Quest,false,false,Prove Combat Readiness
 quest_ApexBloodlines_06_description,quests,Quest,false,false,"Eliminate five infected entities to demonstrate basic combat readiness."
-quest_ApexBloodlines_07_name,quests,Quest,false,false,TRANSMISSION - PROTOCOL COMPLETE
-quest_ApexBloodlines_07_subtitle,quests,Quest,false,false,ApexOrder Bloodlines
-quest_ApexBloodlines_07_description,quests,Quest,false,false,"SURVIVAL PROTOCOL COMPLETE. External survivor coordinates have been recovered. Switching to White River survivor protocols..."
+quest_ApexBloodlines_07_name,quests,Quest,false,false,TRANSMISSION - CONTACT ESTABLISHED
+quest_ApexBloodlines_07_subtitle,quests,Quest,false,false,Locate a Survivor Outpost
+quest_ApexBloodlines_07_description,quests,Quest,false,false,"A weak transmission has revealed the location of a nearby survivor outpost. Reach the trader and establish contact. Your recovered equipment and encrypted transmission will only be released after contact is confirmed."
+quest_ApexBloodlines_07_completion,quests,Quest,false,false,"Contact confirmed. Survival protocol complete. Equipment and encrypted transmission released."
