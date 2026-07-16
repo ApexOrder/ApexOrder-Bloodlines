@@ -1,23 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configs>
-    <!--
-        Primitive Helix Reader workstation group for 7DTD 3.x.
-
-        Vanilla 3.x places window_group nodes directly beneath /xui. This first
-        custom pass deliberately reuses proven vanilla workstation windows so the
-        group can open reliably before we replace individual panels with bespoke
-        Bloodlines controls in windows.xml.
-    -->
     <append xpath="/xui">
         <window_group name="workstation_ApexBloodlinesPrimitiveHelixReader"
                       controller="XUiC_WorkstationWindowGroup"
                       open_backpack_on_open="true"
                       close_compass_on_open="true"
                       defaultselected="bp.content">
-            <window name="windowCraftingList" />
+            <window name="windowApexBloodlinesHelixReaderList" />
             <window name="craftingInfoPanel" />
-            <window name="windowCraftingQueue" />
-            <window name="windowOutput" />
+            <window name="windowApexBloodlinesHelixReaderQueue" />
+            <window name="windowApexBloodlinesHelixReaderOutput" />
             <window name="windowNonPagingHeader" />
         </window_group>
     </append>
