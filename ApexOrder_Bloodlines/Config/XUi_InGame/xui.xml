@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+    <!--
+        Primitive Helix Reader workstation group for 7DTD 3.x.
+        XUi patches for in-game windows must be placed under Config/XUi_InGame.
+    -->
+    <append xpath="/xui/ruleset[@name='default']">
+        <window_group name="workstation_ApexBloodlinesPrimitiveHelixReader"
+                      controller="XUiC_WorkstationWindowGroup">
+            <window name="windowWorkstationCraftingList" />
+            <window name="craftingInfoPanel" />
+            <window name="windowWorkstationCraftingQueue" />
+            <window name="windowOutputWorkStation" />
+            <window name="windowNonPagingHeader" />
+        </window_group>
+    </append>
+</configs>
