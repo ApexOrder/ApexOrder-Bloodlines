@@ -9,7 +9,6 @@
             <property name="EconomicValue" value="1"/>
             <property name="Stacknumber" value="500"/>
         </item>
-
         <item name="ApexBloodlinesResourceRope">
             <property name="Extends" value="resourceCloth"/>
             <property name="CustomIcon" value="resourceYuccaFibers"/>
@@ -18,7 +17,6 @@
             <property name="EconomicValue" value="2"/>
             <property name="Stacknumber" value="500"/>
         </item>
-
         <item name="ApexBloodlinesResourceBranch">
             <property name="Extends" value="resourceWood"/>
             <property name="CustomIcon" value="resourceWood"/>
@@ -27,7 +25,6 @@
             <property name="EconomicValue" value="2"/>
             <property name="Stacknumber" value="500"/>
         </item>
-
         <item name="ApexBloodlinesResourceBark">
             <property name="Extends" value="resourceWood"/>
             <property name="CustomIcon" value="resourceWood"/>
@@ -36,7 +33,6 @@
             <property name="EconomicValue" value="1"/>
             <property name="Stacknumber" value="500"/>
         </item>
-
         <item name="ApexBloodlinesResourceSharpStone">
             <property name="Extends" value="resourceRockSmall"/>
             <property name="CustomIcon" value="resourceRockSmall"/>
@@ -45,7 +41,6 @@
             <property name="EconomicValue" value="2"/>
             <property name="Stacknumber" value="500"/>
         </item>
-
         <item name="ApexBloodlinesToolCrudeAxe">
             <property name="Extends" value="meleeToolRepairT0StoneAxe"/>
             <property name="Tags" value="T0,axe,melee,light,tool,longShaft,repairTool,miningTool,ApexBloodlinesCrudeAxe,canHaveCosmetic,harvestingSkill"/>
@@ -73,7 +68,6 @@
                 <passive_effect name="HarvestCount" operation="base_set" value="1" tags="ApexBloodlinesAxeHarvest"/>
             </effect_group>
         </item>
-
         <item name="ApexBloodlinesWeaponCrudePike">
             <property name="Extends" value="meleeWpnSpearT0StoneSpear"/>
             <property name="Tags" value="T0,melee,medium,weapon,meleeWeapon,longShaft,spearSkill"/>
@@ -98,57 +92,16 @@
                 <passive_effect name="BlockDamage" operation="base_set" value="6" tags="primary"/>
             </effect_group>
         </item>
-
-        <item name="ApexBloodlinesArmorBarkHelmet">
-            <property name="Extends" value="armorPrimitiveHelmet"/>
-            <property name="CustomIcon" value="armorPrimitiveHelmet"/>
-            <property name="CustomIconTint" value="5C432E"/>
-            <property name="DescriptionKey" value="ApexBloodlinesArmorBarkHelmetDesc"/>
-        </item>
-        <item name="ApexBloodlinesArmorBarkOutfit">
-            <property name="Extends" value="armorPrimitiveOutfit"/>
-            <property name="CustomIcon" value="armorPrimitiveOutfit"/>
-            <property name="CustomIconTint" value="5C432E"/>
-            <property name="DescriptionKey" value="ApexBloodlinesArmorBarkOutfitDesc"/>
-        </item>
-        <item name="ApexBloodlinesArmorBarkGloves">
-            <property name="Extends" value="armorPrimitiveGloves"/>
-            <property name="CustomIcon" value="armorPrimitiveGloves"/>
-            <property name="CustomIconTint" value="5C432E"/>
-            <property name="DescriptionKey" value="ApexBloodlinesArmorBarkGlovesDesc"/>
-        </item>
-        <item name="ApexBloodlinesArmorBarkBoots">
-            <property name="Extends" value="armorPrimitiveBoots"/>
-            <property name="CustomIcon" value="armorPrimitiveBoots"/>
-            <property name="CustomIconTint" value="5C432E"/>
-            <property name="DescriptionKey" value="ApexBloodlinesArmorBarkBootsDesc"/>
-        </item>
-
-        <item name="ApexBloodlinesTransmission">
-            <property name="Extends" value="resourcePaper"/>
-            <property name="CustomIcon" value="resourcePaper"/>
-            <property name="CustomIconTint" value="00C878"/>
-            <property name="DescriptionKey" value="ApexBloodlinesTransmissionDesc"/>
-            <property name="EconomicValue" value="0"/>
-            <property name="Stacknumber" value="1"/>
-        </item>
-
-        <item name="ApexBloodlinesDormantHelixCore">
-            <property name="Extends" value="resourceElectricParts"/>
-            <property name="CustomIcon" value="resourceElectricParts"/>
-            <property name="CustomIconTint" value="00E68A"/>
-            <property name="DescriptionKey" value="ApexBloodlinesDormantHelixCoreDesc"/>
-            <property name="EconomicValue" value="0"/>
-            <property name="Stacknumber" value="1"/>
-        </item>
-
-        <item name="ApexBloodlinesCrudeSignalReader">
-            <property name="Extends" value="resourceElectricParts"/>
-            <property name="CustomIcon" value="resourceElectricParts"/>
-            <property name="CustomIconTint" value="64FFB0"/>
-            <property name="DescriptionKey" value="ApexBloodlinesCrudeSignalReaderDesc"/>
-            <property name="EconomicValue" value="25"/>
-            <property name="Stacknumber" value="1"/>
-        </item>
+        <item name="ApexBloodlinesArmorBarkHelmet"><property name="Extends" value="armorPrimitiveHelmet"/><property name="CustomIcon" value="armorPrimitiveHelmet"/><property name="CustomIconTint" value="5C432E"/><property name="DescriptionKey" value="ApexBloodlinesArmorBarkHelmetDesc"/></item>
+        <item name="ApexBloodlinesArmorBarkOutfit"><property name="Extends" value="armorPrimitiveOutfit"/><property name="CustomIcon" value="armorPrimitiveOutfit"/><property name="CustomIconTint" value="5C432E"/><property name="DescriptionKey" value="ApexBloodlinesArmorBarkOutfitDesc"/></item>
+        <item name="ApexBloodlinesArmorBarkGloves"><property name="Extends" value="armorPrimitiveGloves"/><property name="CustomIcon" value="armorPrimitiveGloves"/><property name="CustomIconTint" value="5C432E"/><property name="DescriptionKey" value="ApexBloodlinesArmorBarkGlovesDesc"/></item>
+        <item name="ApexBloodlinesArmorBarkBoots"><property name="Extends" value="armorPrimitiveBoots"/><property name="CustomIcon" value="armorPrimitiveBoots"/><property name="CustomIconTint" value="5C432E"/><property name="DescriptionKey" value="ApexBloodlinesArmorBarkBootsDesc"/></item>
+        <item name="ApexBloodlinesTransmission"><property name="Extends" value="resourcePaper"/><property name="CustomIcon" value="resourcePaper"/><property name="CustomIconTint" value="00C878"/><property name="DescriptionKey" value="ApexBloodlinesTransmissionDesc"/><property name="EconomicValue" value="0"/><property name="Stacknumber" value="1"/></item>
+        <item name="ApexBloodlinesDormantHelixCore"><property name="Extends" value="resourceElectricParts"/><property name="CustomIcon" value="resourceElectricParts"/><property name="CustomIconTint" value="00E68A"/><property name="DescriptionKey" value="ApexBloodlinesDormantHelixCoreDesc"/><property name="EconomicValue" value="0"/><property name="Stacknumber" value="1"/></item>
+        <item name="ApexBloodlinesAnalysedHelixCore"><property name="Extends" value="resourceElectricParts"/><property name="CustomIcon" value="resourceElectricParts"/><property name="CustomIconTint" value="B6FFDD"/><property name="DescriptionKey" value="ApexBloodlinesAnalysedHelixCoreDesc"/><property name="EconomicValue" value="0"/><property name="Stacknumber" value="1"/></item>
+        <item name="ApexBloodlinesProtocolTerra"><property name="Extends" value="challengeQuestMaster"/><property name="CustomIcon" value="resourceClayLump"/><property name="CustomIconTint" value="60C878"/><property name="DescriptionKey" value="ApexBloodlinesProtocolTerraDesc"/><property class="Action0"><property name="UseAnimation" value="false"/><property name="QuestGiven" value="quest_ApexBloodlines_Terra_01_Resonance"/></property></item>
+        <item name="ApexBloodlinesProtocolGaia"><property name="Extends" value="challengeQuestMaster"/><property name="CustomIcon" value="resourceYuccaFibers"/><property name="CustomIconTint" value="7FE36D"/><property name="DescriptionKey" value="ApexBloodlinesProtocolGaiaDesc"/><property class="Action0"><property name="UseAnimation" value="false"/><property name="QuestGiven" value="quest_ApexBloodlines_Gaia_01_Resonance"/></property></item>
+        <item name="ApexBloodlinesProtocolForge"><property name="Extends" value="challengeQuestMaster"/><property name="CustomIcon" value="resourceForgedIron"/><property name="CustomIconTint" value="E58A3A"/><property name="DescriptionKey" value="ApexBloodlinesProtocolForgeDesc"/><property class="Action0"><property name="UseAnimation" value="false"/><property name="QuestGiven" value="quest_ApexBloodlines_Forge_01_Resonance"/></property></item>
+        <item name="ApexBloodlinesProtocolOrion"><property name="Extends" value="challengeQuestMaster"/><property name="CustomIcon" value="resourceElectricParts"/><property name="CustomIconTint" value="6FA8FF"/><property name="DescriptionKey" value="ApexBloodlinesProtocolOrionDesc"/><property class="Action0"><property name="UseAnimation" value="false"/><property name="QuestGiven" value="quest_ApexBloodlines_Orion_01_Resonance"/></property></item>
     </append>
 </configs>
