@@ -136,7 +136,7 @@
             <property name="name_key" value="quest_ApexBloodlines_08_name"/>
             <property name="subtitle_key" value="quest_ApexBloodlines_08_subtitle"/>
             <property name="description_key" value="quest_ApexBloodlines_08_description"/>
-            <property name="icon" value="ui_game_symbol_electricity"/>
+            <property name="icon" value="ui_game_symbol_crafting"/>
             <property name="category_key" value="quest"/>
             <property name="add_to_tier_complete" value="false"/>
             <property name="shareable" value="false"/>
