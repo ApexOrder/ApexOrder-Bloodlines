@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+    <!--
+        Primitive Helix Reader workstation group.
+
+        7DTD derives this group name from the workstation block name. Keeping the
+        standard workstation controllers here gives us a stable XML-only base
+        which can later be replaced panel-by-panel with fully custom controls.
+    -->
+    <append xpath="/xui/ruleset[@name='default']">
+        <window_group name="WindowWorkstation_ApexBloodlinesPrimitiveHelixReader"
+                      controller="XUiC_WorkstationWindowGroup">
+            <window name="windowWorkstationCraftingList" />
+            <window name="craftingInfoPanel" />
+            <window name="windowWorkstationCraftingQueue" />
+            <window name="windowOutput" />
+            <window name="windowNonPagingHeader" />
+        </window_group>
+    </append>
+</configs>
