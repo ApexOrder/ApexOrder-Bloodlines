@@ -2,15 +2,22 @@
 <configs>
     <!--
         Primitive Helix Reader workstation group for 7DTD 3.x.
-        XUi patches for in-game windows must be placed under Config/XUi_InGame.
+
+        Vanilla 3.x places window_group nodes directly beneath /xui. This first
+        custom pass deliberately reuses proven vanilla workstation windows so the
+        group can open reliably before we replace individual panels with bespoke
+        Bloodlines controls in windows.xml.
     -->
-    <append xpath="/xui/ruleset[@name='default']">
+    <append xpath="/xui">
         <window_group name="workstation_ApexBloodlinesPrimitiveHelixReader"
-                      controller="XUiC_WorkstationWindowGroup">
-            <window name="windowWorkstationCraftingList" />
+                      controller="XUiC_WorkstationWindowGroup"
+                      open_backpack_on_open="true"
+                      close_compass_on_open="true"
+                      defaultselected="bp.content">
+            <window name="windowCraftingList" />
             <window name="craftingInfoPanel" />
-            <window name="windowWorkstationCraftingQueue" />
-            <window name="windowOutputWorkStation" />
+            <window name="windowCraftingQueue" />
+            <window name="windowOutput" />
             <window name="windowNonPagingHeader" />
         </window_group>
     </append>
