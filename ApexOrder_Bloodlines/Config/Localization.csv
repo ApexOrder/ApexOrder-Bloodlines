@@ -1,6 +1,10 @@
 Key,File,Type,UsedInMainMenu,NoTranslate,english
 quest_ApexBloodlines_Group,quests,Quest,false,false,ApexOrder Bloodlines
 quest_ApexBloodlines_Story_Group,quests,Quest,false,false,Bloodlines
+quest_ApexBloodlines_Terra_Group,quests,Quest,false,false,Bloodlines - TERRA
+quest_ApexBloodlines_Gaia_Group,quests,Quest,false,false,Bloodlines - GAIA
+quest_ApexBloodlines_Forge_Group,quests,Quest,false,false,Bloodlines - FORGE
+quest_ApexBloodlines_Orion_Group,quests,Quest,false,false,Bloodlines - ORION
 ApexBloodlinesResourceStick,items,Item,false,false,Stick
 ApexBloodlinesResourceStickDesc,items,Item,false,false,"A dry length of wood collected from bushes and shrubbery."
 ApexBloodlinesResourceRope,items,Item,false,false,Fibre Rope
@@ -27,8 +31,18 @@ ApexBloodlinesTransmission,items,Item,false,false,Encrypted Bloodlines Transmiss
 ApexBloodlinesTransmissionDesc,items,Item,false,false,"A fragmented transmission containing the final survival protocol."
 ApexBloodlinesDormantHelixCore,items,Item,false,false,Dormant Helix Core
 ApexBloodlinesDormantHelixCoreDesc,items,Item,false,false,"A sealed metallic core pawned to the trader by a vanished scavenger. It remained inert until you approached and now emits a slow emerald pulse."
-ApexBloodlinesCrudeSignalReader,items,Item,false,false,Crude Signal Reader
-ApexBloodlinesCrudeSignalReaderDesc,items,Item,false,false,"A rough receiver assembled from scavenged components. It is designed to isolate and trace the signal emitted by the Dormant Helix Core."
+ApexBloodlinesAnalysedHelixCore,items,Item,false,false,Analysed Helix Core
+ApexBloodlinesAnalysedHelixCoreDesc,items,Item,false,false,"The reader has awakened the core. Four compatible integration protocols are encoded within it. Only one can be accepted."
+ApexBloodlinesPrimitiveHelixReader,blocks,Block,false,false,Primitive Helix Reader
+ApexBloodlinesPrimitiveHelixReaderDesc,blocks,Block,false,false,"A crude forge-based reader rebuilt to analyse a single Helix Core. Its design is temporary, but the choice it reveals is permanent."
+ApexBloodlinesProtocolTerra,items,Item,false,false,TERRA Integration Directive
+ApexBloodlinesProtocolTerraDesc,items,Item,false,false,"Accept the TERRA protocol. Reading this directive permanently begins the TERRA Bloodline path."
+ApexBloodlinesProtocolGaia,items,Item,false,false,GAIA Integration Directive
+ApexBloodlinesProtocolGaiaDesc,items,Item,false,false,"Accept the GAIA protocol. Reading this directive permanently begins the GAIA Bloodline path."
+ApexBloodlinesProtocolForge,items,Item,false,false,FORGE Integration Directive
+ApexBloodlinesProtocolForgeDesc,items,Item,false,false,"Accept the FORGE protocol. Reading this directive permanently begins the FORGE Bloodline path."
+ApexBloodlinesProtocolOrion,items,Item,false,false,ORION Integration Directive
+ApexBloodlinesProtocolOrionDesc,items,Item,false,false,"Accept the ORION protocol. Reading this directive permanently begins the ORION Bloodline path."
 quest_ApexBloodlines_01_name,quests,Quest,false,false,PROTOCOL 01 - AWAKENING
 quest_ApexBloodlines_01_subtitle,quests,Quest,false,false,Gather Fibres Sticks and Stones
 quest_ApexBloodlines_01_description,quests,Quest,false,false,"Consciousness returns in fragments. Gather plant fibres, sticks and small stones from the surrounding area."
@@ -51,6 +65,22 @@ quest_ApexBloodlines_07_name,quests,Quest,false,false,PROTOCOL 07 - CONTACT ESTA
 quest_ApexBloodlines_07_subtitle,quests,Quest,false,false,Speak to the Trader
 quest_ApexBloodlines_07_description,quests,Quest,false,false,"The survival transmission has identified a nearby survivor outpost. Reach the trader and establish contact."
 quest_ApexBloodlines_07_completion,quests,Quest,false,false,"Hold on... that thing is reacting to you. Some scavenger pawned it here months ago and claimed he found it inside an underground facility. It has been dead ever since. Then you walk in and it starts lighting up. You are not the first person it has done this to... and I doubt you will be the last. Take it. Just be careful what you wake up."
-quest_ApexBloodlines_08_name,quests,Quest,false,false,BLOODLINES I - THE SIGNAL
-quest_ApexBloodlines_08_subtitle,quests,Quest,false,false,Build a Crude Signal Reader
-quest_ApexBloodlines_08_description,quests,Quest,false,false,"The core reacted to your presence but remains sealed. Its emerald pulse repeats in a deliberate pattern. Assemble a crude signal reader from scavenged electrical and mechanical components and determine what it is transmitting."
+quest_ApexBloodlines_08_name,quests,Quest,false,false,BLOODLINES I - THE READER
+quest_ApexBloodlines_08_subtitle,quests,Quest,false,false,Construct and Place the Helix Reader
+quest_ApexBloodlines_08_description,quests,Quest,false,false,"The core is broadcasting a structured signal. Rebuild a forge into a Primitive Helix Reader and place it somewhere secure."
+quest_ApexBloodlines_09_name,quests,Quest,false,false,BLOODLINES II - GENETIC RESONANCE
+quest_ApexBloodlines_09_subtitle,quests,Quest,false,false,Analyse the Dormant Helix Core
+quest_ApexBloodlines_09_description,quests,Quest,false,false,"Insert the Dormant Helix Core into the Primitive Helix Reader and begin analysis. The recovered archive contains four compatible protocols, but integration will permanently reject the other three."
+quest_ApexBloodlines_09_completion,quests,Quest,false,false,"ANALYSIS COMPLETE. Four viable integration protocols recovered. Select one directive. This decision cannot be reversed."
+quest_ApexBloodlines_Terra_01_name,quests,Quest,false,false,TERRA I - EARTHBOUND RESONANCE
+quest_ApexBloodlines_Terra_01_subtitle,quests,Quest,false,false,The Ground Answers
+quest_ApexBloodlines_Terra_01_description,quests,Quest,false,false,"The TERRA directive has bonded with the Helix Core. Dense mineral signatures now register as biological data. Gather clay to establish the first stable resonance."
+quest_ApexBloodlines_Gaia_01_name,quests,Quest,false,false,GAIA I - VERDANT RESONANCE
+quest_ApexBloodlines_Gaia_01_subtitle,quests,Quest,false,false,Life Answers
+quest_ApexBloodlines_Gaia_01_description,quests,Quest,false,false,"The GAIA directive has bonded with the Helix Core. Living plant matter now carries a repeating biological signature. Gather plant fibres to stabilise it."
+quest_ApexBloodlines_Forge_01_name,quests,Quest,false,false,FORGE I - METALLIC RESONANCE
+quest_ApexBloodlines_Forge_01_subtitle,quests,Quest,false,false,Metal Answers
+quest_ApexBloodlines_Forge_01_description,quests,Quest,false,false,"The FORGE directive has bonded with the Helix Core. Processed metal now produces a recognisable molecular pattern. Gather scrap iron to begin calibration."
+quest_ApexBloodlines_Orion_01_name,quests,Quest,false,false,ORION I - ELECTRIC RESONANCE
+quest_ApexBloodlines_Orion_01_subtitle,quests,Quest,false,false,The Signal Answers
+quest_ApexBloodlines_Orion_01_description,quests,Quest,false,false,"The ORION directive has bonded with the Helix Core. Electrical components now echo with encoded information. Gather electrical parts to begin decoding it."
