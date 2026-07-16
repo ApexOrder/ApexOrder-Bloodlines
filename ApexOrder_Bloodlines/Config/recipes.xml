@@ -44,7 +44,7 @@
         </recipe>
 
         <recipe name="ApexBloodlinesCrudeSignalReader" count="1" craft_time="20" tags="packMuleCrafting">
-            <ingredient name="resourceElectricalParts" count="3"/>
+            <ingredient name="resourceElectricParts" count="3"/>
             <ingredient name="resourceMechanicalParts" count="2"/>
             <ingredient name="resourceScrapPolymers" count="8"/>
             <ingredient name="resourceDuctTape" count="1"/>
