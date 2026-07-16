@@ -134,8 +134,8 @@
         </item>
 
         <item name="ApexBloodlinesDormantHelixCore">
-            <property name="Extends" value="resourceElectricalParts"/>
-            <property name="CustomIcon" value="resourceElectricalParts"/>
+            <property name="Extends" value="resourceElectricParts"/>
+            <property name="CustomIcon" value="resourceElectricParts"/>
             <property name="CustomIconTint" value="00E68A"/>
             <property name="DescriptionKey" value="ApexBloodlinesDormantHelixCoreDesc"/>
             <property name="EconomicValue" value="0"/>
@@ -143,8 +143,8 @@
         </item>
 
         <item name="ApexBloodlinesCrudeSignalReader">
-            <property name="Extends" value="resourceElectricalParts"/>
-            <property name="CustomIcon" value="resourceElectricalParts"/>
+            <property name="Extends" value="resourceElectricParts"/>
+            <property name="CustomIcon" value="resourceElectricParts"/>
             <property name="CustomIconTint" value="64FFB0"/>
             <property name="DescriptionKey" value="ApexBloodlinesCrudeSignalReaderDesc"/>
             <property name="EconomicValue" value="25"/>
