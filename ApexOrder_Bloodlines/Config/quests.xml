@@ -127,7 +127,21 @@
             <reward type="Exp" value="400"/>
             <reward type="Item" id="gunHandgunT0PipePistol" value="1"/>
             <reward type="Item" id="ammo9mmBulletBall" value="25"/>
-            <reward type="Item" id="ApexBloodlinesTransmission" value="1"/>
+            <reward type="Item" id="ApexBloodlinesDormantHelixCore" value="1"/>
+            <reward type="Quest" id="quest_ApexBloodlines_08_TheSignal"/>
+        </quest>
+
+        <quest id="quest_ApexBloodlines_08_TheSignal">
+            <property name="group_name_key" value="quest_ApexBloodlines_Story_Group"/>
+            <property name="name_key" value="quest_ApexBloodlines_08_name"/>
+            <property name="subtitle_key" value="quest_ApexBloodlines_08_subtitle"/>
+            <property name="description_key" value="quest_ApexBloodlines_08_description"/>
+            <property name="icon" value="ui_game_symbol_electricity"/>
+            <property name="category_key" value="quest"/>
+            <property name="add_to_tier_complete" value="false"/>
+            <property name="shareable" value="false"/>
+            <objective type="Craft" id="ApexBloodlinesCrudeSignalReader" value="1" phase="1"/>
+            <reward type="Exp" value="250"/>
         </quest>
     </append>
 </configs>
