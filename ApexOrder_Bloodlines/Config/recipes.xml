@@ -43,7 +43,7 @@
         <recipe name="ApexBloodlinesProtocolOrion" count="1" craft_time="20" craft_area="ApexBloodlinesHelixReader">
             <ingredient name="ApexBloodlinesAnalysedHelixCore" count="1"/>
             <ingredient name="resourceElectricParts" count="5"/>
-            <ingredient name="resourceElectronicParts" count="2"/>
+            <ingredient name="resourceMechanicalParts" count="2"/>
         </recipe>
     </append>
 </configs>
