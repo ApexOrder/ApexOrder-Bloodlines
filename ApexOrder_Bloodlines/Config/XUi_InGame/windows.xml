@@ -1,37 +1,163 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configs>
     <!--
-        Phase 1 baseline: exact V3.0.1 vanilla windowCraftingList structure.
-        Only the window name has been changed so the Helix Reader can be
-        tested as a custom window without changing any required controllers.
+        Apex Bloodlines Primitive Helix Reader
+
+        This window deliberately preserves the exact working vanilla V3.0.1
+        CraftingListInfo, CategoryList and RecipeList controller hierarchy.
+        Only presentation has been changed so the reliable vanilla behaviour
+        remains untouched.
+
+        Bloodlines UI palette:
+        Primary accent:   0,230,138
+        Secondary accent: 92,190,165
+        Panel dark:       5,16,18
+        Panel mid:        8,30,29
+        Muted text:       150,195,183
     -->
     <append xpath="/windows">
-        <window name="windowApexBloodlinesHelixReaderList" width="397" height="688" controller="CraftingListInfo" panel="Left" cursor_area="true">
+        <window name="windowApexBloodlinesHelixReaderList"
+                width="397"
+                height="688"
+                controller="CraftingListInfo"
+                panel="Left"
+                cursor_area="true">
 
-            <rect name="header" height="43" depth="1">
-                <headerbg />
-                <sprite pos="4,-5" depth="2" name="windowIcon" style="icon32px" sprite="Craft_Icon_Basics"/>
-                <label style="header.name" text="basics" text_key="xuiBasics" />
+            <!-- Bloodlines workstation header -->
+            <rect name="header" height="72" depth="1">
+                <sprite depth="0"
+                        name="headerOuter"
+                        sprite="menu_empty3px"
+                        width="397"
+                        height="72"
+                        color="0,230,138,105"
+                        type="sliced"
+                        fillcenter="false"/>
+                <sprite depth="1"
+                        name="headerBackground"
+                        sprite="menu_empty3px"
+                        pos="3,-3"
+                        width="391"
+                        height="66"
+                        color="5,16,18,250"
+                        type="sliced"/>
+                <sprite depth="2"
+                        name="headerAccent"
+                        sprite="menu_empty"
+                        pos="6,-66"
+                        width="385"
+                        height="4"
+                        color="0,230,138,255"/>
+
+                <!-- Known-good vanilla icon retained and recoloured -->
+                <sprite pos="12,-19"
+                        depth="3"
+                        name="windowIcon"
+                        style="icon32px"
+                        sprite="Craft_Icon_Basics"
+                        color="0,230,138,255"/>
+
+                <label depth="3"
+                       name="title"
+                       pos="54,-8"
+                       width="330"
+                       height="31"
+                       text="PRIMITIVE HELIX READER"
+                       font_size="28"
+                       color="0,230,138,255"/>
+                <label depth="3"
+                       name="subtitle"
+                       pos="54,-39"
+                       width="330"
+                       height="24"
+                       text="GENETIC ANALYSIS TERMINAL"
+                       font_size="20"
+                       color="150,195,183,255"/>
             </rect>
 
-            <rect name="content" height="650" depth="1" pos="0,-43" on_scroll="true">
+            <!-- Exact vanilla content/controller structure, visually reskinned -->
+            <rect name="content" height="616" depth="1" pos="0,-72" on_scroll="true">
+                <sprite depth="0"
+                        name="contentOuter"
+                        sprite="menu_empty3px"
+                        width="397"
+                        height="616"
+                        color="0,230,138,75"
+                        type="sliced"
+                        fillcenter="false"/>
+                <sprite depth="1"
+                        name="contentBackground"
+                        sprite="menu_empty3px"
+                        pos="3,-3"
+                        width="391"
+                        height="610"
+                        color="5,16,18,245"
+                        type="sliced"/>
 
                 <rect depth="2" name="categorySelector" width="390" height="44" pos="3,-6">
-                    <sprite name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="396" height="49" color="[black]" type="sliced" fillcenter="false" />
-                    <sprite color="[mediumGrey]" type="sliced" />
-                    <grid name="categories" pos="23,-21" rows="1" cols="9" width="390" height="43" cell_width="43" cell_height="43" repeat_content="true" controller="CategoryList">
+                    <sprite name="backgroundMain"
+                            sprite="menu_empty3px"
+                            pos="-3,3"
+                            width="396"
+                            height="49"
+                            color="0,230,138,80"
+                            type="sliced"
+                            fillcenter="false"/>
+                    <sprite color="8,30,29,255" type="sliced"/>
+                    <grid name="categories"
+                          pos="23,-21"
+                          rows="1"
+                          cols="9"
+                          width="390"
+                          height="43"
+                          cell_width="43"
+                          cell_height="43"
+                          repeat_content="true"
+                          controller="CategoryList">
                         <category_icon />
                     </grid>
                 </rect>
 
                 <rect depth="3" name="searchControls" width="390" height="44" pos="3,-52">
-                    <sprite name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="396" height="49" color="[black]" type="sliced" fillcenter="false" />
-                    <sprite color="[darkGrey]" type="sliced" />
-                    <button depth="4" name="favorites" style="icon30px, press" pos="18,-22" sprite="server_favorite" pivot="center" sound="[paging_click]" tooltip="Favorites" tooltip_key="lblFavorites" collider_scale="1.5" />
+                    <sprite name="backgroundMain"
+                            sprite="menu_empty3px"
+                            pos="-3,3"
+                            width="396"
+                            height="49"
+                            color="0,230,138,65"
+                            type="sliced"
+                            fillcenter="false"/>
+                    <sprite color="6,22,23,255" type="sliced"/>
+
+                    <button depth="4"
+                            name="favorites"
+                            style="icon30px, press"
+                            pos="18,-22"
+                            sprite="server_favorite"
+                            pivot="center"
+                            color="0,230,138,255"
+                            sound="[paging_click]"
+                            tooltip="Favorites"
+                            tooltip_key="lblFavorites"
+                            collider_scale="1.5"/>
 
                     <rect pos="104,0" width="200">
-                        <sprite depth="4" name="searchIcon" style="icon30px" pos="0,-22" sprite="ui_game_symbol_search" pivot="center"/>
-                        <textfield depth="5" name="searchInput" pos="22,-7" width="140" height="30" virtual_keyboard_prompt="vkPromptSearchTerm" search_field="true" close_group_on_tab="true" clear_button="true" />
+                        <sprite depth="4"
+                                name="searchIcon"
+                                style="icon30px"
+                                pos="0,-22"
+                                sprite="ui_game_symbol_search"
+                                pivot="center"
+                                color="0,230,138,255"/>
+                        <textfield depth="5"
+                                   name="searchInput"
+                                   pos="22,-7"
+                                   width="140"
+                                   height="30"
+                                   virtual_keyboard_prompt="vkPromptSearchTerm"
+                                   search_field="true"
+                                   close_group_on_tab="true"
+                                   clear_button="true"/>
                     </rect>
 
                     <rect pos="286,0" width="104" height="43">
@@ -39,9 +165,54 @@
                     </rect>
                 </rect>
 
-                <grid name="recipes" depth="2" rows="12" cols="1" pos="3,-98" width="390" height="552" cell_width="390" cell_height="46" controller="RecipeList" repeat_content="true" arrangement="vertical">
+                <!-- Required RecipeList controller and recipe_entry remain unchanged -->
+                <grid name="recipes"
+                      depth="2"
+                      rows="11"
+                      cols="1"
+                      pos="3,-98"
+                      width="390"
+                      height="506"
+                      cell_width="390"
+                      cell_height="46"
+                      controller="RecipeList"
+                      repeat_content="true"
+                      arrangement="vertical">
                     <recipe_entry name="0"/>
                 </grid>
+
+                <!-- Presentation-only footer; no controller dependency -->
+                <rect name="readerStatus" depth="3" pos="6,-572" width="385" height="34">
+                    <sprite depth="0"
+                            sprite="menu_empty3px"
+                            width="385"
+                            height="34"
+                            color="0,230,138,60"
+                            type="sliced"
+                            fillcenter="false"/>
+                    <sprite depth="1"
+                            sprite="menu_empty3px"
+                            pos="2,-2"
+                            width="381"
+                            height="30"
+                            color="8,30,29,245"
+                            type="sliced"/>
+                    <label depth="2"
+                           pos="10,-6"
+                           width="250"
+                           height="24"
+                           text="HELIX LINK: STABLE"
+                           font_size="19"
+                           color="150,195,183,255"/>
+                    <label depth="2"
+                           pos="258,-6"
+                           width="115"
+                           height="24"
+                           text="READY"
+                           font_size="19"
+                           color="0,230,138,255"
+                           justify="right"/>
+                </rect>
             </rect>
         </window>
     </append>
