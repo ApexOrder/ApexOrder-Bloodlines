@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configs>
-    <!--
-        Phase 1 baseline test.
-        Only the crafting list is custom; all other workstation windows are
-        known-good vanilla V3.0.1 windows so failures are isolated cleanly.
-    -->
     <append xpath="/xui">
         <window_group name="workstation_ApexBloodlinesPrimitiveHelixReader"
                       controller="XUiC_WorkstationWindowGroup"
@@ -13,8 +8,8 @@
                       defaultselected="bp.content">
             <window name="windowApexBloodlinesHelixReaderList" />
             <window name="craftingInfoPanel" />
-            <window name="windowCraftingQueue" />
-            <window name="windowOutput" />
+            <window name="windowApexBloodlinesHelixReaderQueue" />
+            <window name="windowApexBloodlinesHelixReaderOutput" />
             <window name="windowNonPagingHeader" />
         </window_group>
     </append>
