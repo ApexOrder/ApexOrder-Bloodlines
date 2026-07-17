@@ -24,5 +24,26 @@
         <recipe name="ApexBloodlinesAnalysedHelixCore" count="1" craft_time="15" craft_area="ApexBloodlinesHelixReader">
             <ingredient name="ApexBloodlinesDormantHelixCore" count="1"/>
         </recipe>
+
+        <recipe name="ApexBloodlinesProtocolTerra" count="1" craft_time="20" craft_area="ApexBloodlinesHelixReader">
+            <ingredient name="ApexBloodlinesAnalysedHelixCore" count="1"/>
+            <ingredient name="resourceClayLump" count="25"/>
+            <ingredient name="resourceRockSmall" count="10"/>
+        </recipe>
+        <recipe name="ApexBloodlinesProtocolGaia" count="1" craft_time="20" craft_area="ApexBloodlinesHelixReader">
+            <ingredient name="ApexBloodlinesAnalysedHelixCore" count="1"/>
+            <ingredient name="resourceYuccaFibers" count="25"/>
+            <ingredient name="resourceWood" count="20"/>
+        </recipe>
+        <recipe name="ApexBloodlinesProtocolForge" count="1" craft_time="20" craft_area="ApexBloodlinesHelixReader">
+            <ingredient name="ApexBloodlinesAnalysedHelixCore" count="1"/>
+            <ingredient name="resourceScrapIron" count="50"/>
+            <ingredient name="resourceMechanicalParts" count="2"/>
+        </recipe>
+        <recipe name="ApexBloodlinesProtocolOrion" count="1" craft_time="20" craft_area="ApexBloodlinesHelixReader">
+            <ingredient name="ApexBloodlinesAnalysedHelixCore" count="1"/>
+            <ingredient name="resourceElectricParts" count="5"/>
+            <ingredient name="resourceElectronicParts" count="2"/>
+        </recipe>
     </append>
 </configs>
