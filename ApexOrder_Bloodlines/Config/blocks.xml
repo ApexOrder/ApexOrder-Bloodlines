@@ -17,17 +17,20 @@
         <drop event="Harvest" name="ApexBloodlinesResourceSharpStone" count="1" prob="0.12" tag="allHarvest"/>
     </append>
 
-    <!-- XML-first placeholder for the final custom Helix Reader workstation. -->
     <append xpath="/blocks">
         <block name="ApexBloodlinesPrimitiveHelixReader">
             <property name="Extends" value="forge"/>
+            <property name="Class" value="Workstation"/>
             <property name="CustomIcon" value="forge"/>
             <property name="CustomIconTint" value="00C878"/>
             <property name="DescriptionKey" value="ApexBloodlinesPrimitiveHelixReaderDesc"/>
-            <property name="CraftArea" value="ApexBloodlinesHelixReader"/>
             <property name="EconomicValue" value="100"/>
             <property name="SellableToTrader" value="false"/>
             <property name="CreativeMode" value="Player"/>
+            <property class="Workstation">
+                <property name="Modules" value="output"/>
+                <property name="CraftingAreaRecipes" value="ApexBloodlinesHelixReader"/>
+            </property>
         </block>
     </append>
 </configs>
