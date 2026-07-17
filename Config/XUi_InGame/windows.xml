@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+    <append xpath="/windows">
+        <window name="windowApexBloodlinesHelixReaderList"
+                width="397"
+                height="688"
+                controller="CraftingListInfo"
+                panel="Left"
+                cursor_area="true">
+
+            <rect name="header" height="72" depth="1">
+                <sprite depth="0" name="outerGlow" sprite="menu_empty3px" width="397" height="72" color="0,230,138,90" type="sliced" fillcenter="false"/>
+                <sprite depth="1" name="background" sprite="menu_empty3px" pos="3,-3" width="391" height="66" color="5,16,18,245" type="sliced"/>
+                <sprite depth="2" name="headerLine" sprite="menu_empty" pos="6,-66" width="385" height="4" color="0,230,138,255"/>
+                <sprite depth="3" name="windowIcon" style="icon32px" sprite="ui_game_symbol_science" pos="10,-18" color="0,230,138,255"/>
+                <label depth="3" name="title" pos="54,-9" width="330" height="30" text="HELIX ANALYSIS" font_size="32" color="0,230,138,255"/>
+                <label depth="3" name="subtitle" pos="54,-40" width="330" height="24" text="SELECT CORE PROTOCOL" font_size="22" color="170,220,205,255"/>
+            </rect>
+
+            <rect name="content" height="616" depth="1" pos="0,-72" on_scroll="true">
+                <sprite depth="0" name="outerGlow" sprite="menu_empty3px" width="397" height="616" color="0,230,138,90" type="sliced" fillcenter="false"/>
+                <sprite depth="1" name="background" sprite="menu_empty3px" pos="3,-3" width="391" height="610" color="4,12,14,245" type="sliced"/>
+
+                <rect depth="2" name="categorySelector" width="385" height="44" pos="6,-8">
+                    <sprite name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="391" height="49" color="0,230,138,70" type="sliced" fillcenter="false"/>
+                    <sprite color="7,42,37,255" type="sliced"/>
+                    <grid name="categories" pos="23,-21" rows="1" cols="9" width="380" height="43" cell_width="43" cell_height="43" repeat_content="true" controller="CategoryList">
+                        <category_icon />
+                    </grid>
+                </rect>
+
+                <rect depth="3" name="searchControls" width="385" height="44" pos="6,-56">
+                    <sprite name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="391" height="49" color="0,230,138,70" type="sliced" fillcenter="false"/>
+                    <sprite color="8,25,27,255" type="sliced"/>
+                    <button depth="4" name="favorites" style="icon30px, press" pos="18,-22" sprite="server_favorite" pivot="center" sound="[paging_click]" tooltip="Favorites" tooltip_key="lblFavorites" collider_scale="1.5"/>
+                    <rect pos="104,0" width="200">
+                        <sprite depth="4" name="searchIcon" style="icon30px" pos="0,-22" sprite="ui_game_symbol_search" pivot="center" color="0,230,138,255"/>
+                        <textfield depth="5" name="searchInput" pos="22,-7" width="140" height="30" virtual_keyboard_prompt="vkPromptSearchTerm" search_field="true" close_group_on_tab="true" clear_button="true"/>
+                    </rect>
+                    <rect pos="286,0" width="99" height="43">
+                        <pager name="pager" pos="0,-6" contents_parent="content"/>
+                    </rect>
+                </rect>
+
+                <label depth="3" name="recipeHeader" pos="14,-110" width="360" height="26" text="AVAILABLE ANALYSIS" font_size="24" color="0,230,138,255"/>
+
+                <grid name="recipes" depth="4" rows="10" cols="1" pos="6,-140" width="385" height="460" cell_width="385" cell_height="46" controller="RecipeList" repeat_content="true" arrangement="vertical">
+                    <recipe_entry name="0"/>
+                </grid>
+            </rect>
+        </window>
+
+        <window name="windowApexBloodlinesHelixReaderQueue"
+                width="397"
+                height="96"
+                panel="Left"
+                cursor_area="true"
+                always_update="true">
+            <rect name="queueFrame" width="397" height="96">
+                <sprite depth="0" name="outerGlow" sprite="menu_empty3px" width="397" height="96" color="0,230,138,90" type="sliced" fillcenter="false"/>
+                <sprite depth="1" name="background" sprite="menu_empty3px" pos="3,-3" width="391" height="90" color="5,16,18,245" type="sliced"/>
+                <label depth="3" name="queueTitle" pos="14,-12" width="150" height="26" text="SEQUENCING" font_size="23" color="0,230,138,255"/>
+                <rect depth="2" pos="92,-8" width="296" height="82" controller="CraftingQueue" always_update="true">
+                    <grid name="queue" rows="1" cols="4" pos="3,-3" cell_width="72" cell_height="72" repeat_content="true" always_update="true">
+                        <recipe_stack name="0"/>
+                    </grid>
+                </rect>
+            </rect>
+        </window>
+
+        <window name="windowApexBloodlinesHelixReaderOutput"
+                width="228"
+                height="198"
+                anchor="Top"
+                panel="Right"
+                cursor_area="true"
+                controller="WorkstationOutputWindow">
+            <rect name="header" height="58" depth="0">
+                <sprite depth="0" name="outerGlow" sprite="menu_empty3px" width="228" height="58" color="0,230,138,90" type="sliced" fillcenter="false"/>
+                <sprite depth="1" name="headerBackground" sprite="menu_empty3px" pos="3,-3" width="222" height="52" color="7,42,37,255" type="sliced"/>
+                <sprite depth="2" name="headerLine" sprite="menu_empty" pos="6,-52" width="216" height="4" color="0,230,138,255"/>
+                <label depth="3" name="outputTitle" pos="12,-14" width="204" height="30" text="CORE OUTPUT" font_size="27" color="0,230,138,255" justify="center"/>
+                <rect pos="0,0" controller="ContainerStandardControls" visible="{buttons_visible}">
+                    <button depth="4" name="btnMoveAll" sprite="ui_game_symbol_store_all_up" tooltip="{take_all_tooltip}" pos="203,-22" style="icon32px, press, hover" pivot="center" sound="[paging_click]"/>
+                </rect>
+            </rect>
+            <rect name="content" depth="0" pos="0,-58" height="140" disablefallthrough="true">
+                <sprite depth="0" name="outerGlow" sprite="menu_empty3px" width="228" height="140" color="0,230,138,90" type="sliced" fillcenter="false"/>
+                <sprite depth="1" name="background" sprite="menu_empty3px" pos="3,-3" width="222" height="134" color="5,16,18,245" type="sliced"/>
+                <grid depth="10" name="inventory" rows="1" cols="1" pos="76,-18" cell_width="75" cell_height="75" controller="WorkstationOutputGrid" repeat_content="true">
+                    <item_stack name="0"/>
+                </grid>
+                <label depth="4" name="outputHint" pos="12,-104" width="204" height="24" text="RETRIEVE ANALYSED CORE" font_size="20" color="150,195,183,255" justify="center"/>
+            </rect>
+        </window>
+    </append>
+</configs>
