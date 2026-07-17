@@ -35,14 +35,14 @@ ApexBloodlinesAnalysedHelixCore,items,Item,false,false,Analysed Helix Core
 ApexBloodlinesAnalysedHelixCoreDesc,items,Item,false,false,"The reader has awakened the core. Four compatible integration protocols are encoded within it. Only one can be accepted."
 ApexBloodlinesPrimitiveHelixReader,blocks,Block,false,false,Primitive Helix Reader
 ApexBloodlinesPrimitiveHelixReaderDesc,blocks,Block,false,false,"A crude forge-based reader rebuilt to analyse a single Helix Core. Its design is temporary, but the choice it reveals is permanent."
-ApexBloodlinesProtocolTerra,items,Item,false,false,TERRA Integration Directive
-ApexBloodlinesProtocolTerraDesc,items,Item,false,false,"Accept the TERRA protocol. Reading this directive permanently begins the TERRA Bloodline path."
-ApexBloodlinesProtocolGaia,items,Item,false,false,GAIA Integration Directive
-ApexBloodlinesProtocolGaiaDesc,items,Item,false,false,"Accept the GAIA protocol. Reading this directive permanently begins the GAIA Bloodline path."
-ApexBloodlinesProtocolForge,items,Item,false,false,FORGE Integration Directive
-ApexBloodlinesProtocolForgeDesc,items,Item,false,false,"Accept the FORGE protocol. Reading this directive permanently begins the FORGE Bloodline path."
-ApexBloodlinesProtocolOrion,items,Item,false,false,ORION Integration Directive
-ApexBloodlinesProtocolOrionDesc,items,Item,false,false,"Accept the ORION protocol. Reading this directive permanently begins the ORION Bloodline path."
+ApexBloodlinesProtocolTerra,items,Item,false,false,TERRA PROTOCOL
+ApexBloodlinesProtocolTerraDesc,items,Item,false,false,"EARTHBOUND ADAPTATION\n\nTERRA specialises in mining, stonework and physical resilience. It is built for players who want stronger harvesting, greater block damage and improved survival against harsh terrain.\n\nPRIMARY MATERIALS: Clay, stone and ore.\nMUTATION RISK: Low.\n\nCrafting this protocol consumes the Analysed Helix Core and permanently rejects the other Bloodlines."
+ApexBloodlinesProtocolGaia,items,Item,false,false,GAIA PROTOCOL
+ApexBloodlinesProtocolGaiaDesc,items,Item,false,false,"VERDANT ADAPTATION\n\nGAIA specialises in farming, harvesting and biological recovery. It is built for players who want better plant yields, stronger food production and nature-focused survival.\n\nPRIMARY MATERIALS: Fibres, wood and cultivated resources.\nMUTATION RISK: Low.\n\nCrafting this protocol consumes the Analysed Helix Core and permanently rejects the other Bloodlines."
+ApexBloodlinesProtocolForge,items,Item,false,false,FORGE PROTOCOL
+ApexBloodlinesProtocolForgeDesc,items,Item,false,false,"MECHANICAL ADAPTATION\n\nFORGE specialises in engineering, weapons and machine integration. It is built for players who want advanced fabrication, stronger technology and improved mechanical combat.\n\nPRIMARY MATERIALS: Scrap iron, forged metal and mechanical parts.\nMUTATION RISK: Medium.\n\nCrafting this protocol consumes the Analysed Helix Core and permanently rejects the other Bloodlines."
+ApexBloodlinesProtocolOrion,items,Item,false,false,ORION PROTOCOL
+ApexBloodlinesProtocolOrionDesc,items,Item,false,false,"NEURAL ADAPTATION\n\nORION specialises in electronics, information and precision. It is built for players who want faster technological progression, better detection and high-end energy systems.\n\nPRIMARY MATERIALS: Electrical parts, electronics and encoded data.\nMUTATION RISK: High.\n\nCrafting this protocol consumes the Analysed Helix Core and permanently rejects the other Bloodlines."
 quest_ApexBloodlines_01_name,quests,Quest,false,false,PROTOCOL 01 - AWAKENING
 quest_ApexBloodlines_01_subtitle,quests,Quest,false,false,Gather Fibres Sticks and Stones
 quest_ApexBloodlines_01_description,quests,Quest,false,false,"Consciousness returns in fragments. Gather plant fibres, sticks and small stones from the surrounding area."
@@ -71,7 +71,7 @@ quest_ApexBloodlines_08_description,quests,Quest,false,false,"The core is broadc
 quest_ApexBloodlines_09_name,quests,Quest,false,false,BLOODLINES II - GENETIC RESONANCE
 quest_ApexBloodlines_09_subtitle,quests,Quest,false,false,Analyse the Dormant Helix Core
 quest_ApexBloodlines_09_description,quests,Quest,false,false,"Insert the Dormant Helix Core into the Primitive Helix Reader and begin analysis. The recovered archive contains four compatible protocols, but integration will permanently reject the other three."
-quest_ApexBloodlines_09_completion,quests,Quest,false,false,"ANALYSIS COMPLETE. Four viable integration protocols recovered. Select one directive. This decision cannot be reversed."
+quest_ApexBloodlines_09_completion,quests,Quest,false,false,"ANALYSIS COMPLETE. Four viable integration protocols recovered. Return to the Helix Reader, review each Bloodline and craft one protocol. This decision cannot be reversed."
 quest_ApexBloodlines_Terra_01_name,quests,Quest,false,false,TERRA I - EARTHBOUND RESONANCE
 quest_ApexBloodlines_Terra_01_subtitle,quests,Quest,false,false,The Ground Answers
 quest_ApexBloodlines_Terra_01_description,quests,Quest,false,false,"The TERRA directive has bonded with the Helix Core. Dense mineral signatures now register as biological data. Gather clay to establish the first stable resonance."
