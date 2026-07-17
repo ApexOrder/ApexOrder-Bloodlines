@@ -1,20 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configs>
-    <!--
-        Apex Bloodlines Primitive Helix Reader
-
-        This window deliberately preserves the exact working vanilla V3.0.1
-        CraftingListInfo, CategoryList and RecipeList controller hierarchy.
-        Only presentation has been changed so the reliable vanilla behaviour
-        remains untouched.
-
-        Bloodlines UI palette:
-        Primary accent:   0,230,138
-        Secondary accent: 92,190,165
-        Panel dark:       5,16,18
-        Panel mid:        8,30,29
-        Muted text:       150,195,183
-    -->
     <append xpath="/windows">
         <window name="windowApexBloodlinesHelixReaderList"
                 width="397"
@@ -23,195 +8,75 @@
                 panel="Left"
                 cursor_area="true">
 
-            <!-- Bloodlines workstation header -->
             <rect name="header" height="72" depth="1">
-                <sprite depth="0"
-                        name="headerOuter"
-                        sprite="menu_empty3px"
-                        width="397"
-                        height="72"
-                        color="0,230,138,105"
-                        type="sliced"
-                        fillcenter="false"/>
-                <sprite depth="1"
-                        name="headerBackground"
-                        sprite="menu_empty3px"
-                        pos="3,-3"
-                        width="391"
-                        height="66"
-                        color="5,16,18,250"
-                        type="sliced"/>
-                <sprite depth="2"
-                        name="headerAccent"
-                        sprite="menu_empty"
-                        pos="6,-66"
-                        width="385"
-                        height="4"
-                        color="0,230,138,255"/>
-
-                <!-- Known-good vanilla icon retained and recoloured -->
-                <sprite pos="12,-19"
-                        depth="3"
-                        name="windowIcon"
-                        style="icon32px"
-                        sprite="Craft_Icon_Basics"
-                        color="0,230,138,255"/>
-
-                <label depth="3"
-                       name="title"
-                       pos="54,-8"
-                       width="330"
-                       height="31"
-                       text="PRIMITIVE HELIX READER"
-                       font_size="28"
-                       color="0,230,138,255"/>
-                <label depth="3"
-                       name="subtitle"
-                       pos="54,-39"
-                       width="330"
-                       height="24"
-                       text="GENETIC ANALYSIS TERMINAL"
-                       font_size="20"
-                       color="150,195,183,255"/>
+                <sprite depth="0" name="headerOuter" sprite="menu_empty3px" width="397" height="72" color="0,230,138,105" type="sliced" fillcenter="false"/>
+                <sprite depth="1" name="headerBackground" sprite="menu_empty3px" pos="3,-3" width="391" height="66" color="5,16,18,250" type="sliced"/>
+                <sprite depth="2" name="headerAccent" sprite="menu_empty" pos="6,-66" width="385" height="4" color="0,230,138,255"/>
+                <sprite pos="12,-19" depth="3" name="windowIcon" style="icon32px" sprite="Craft_Icon_Basics" color="0,230,138,255"/>
+                <label depth="3" name="title" pos="54,-8" width="330" height="31" text="PRIMITIVE HELIX READER" font_size="28" color="0,230,138,255"/>
+                <label depth="3" name="subtitle" pos="54,-39" width="330" height="24" text="GENETIC ANALYSIS TERMINAL" font_size="20" color="150,195,183,255"/>
             </rect>
 
-            <!-- Exact vanilla content/controller structure, visually reskinned -->
             <rect name="content" height="616" depth="1" pos="0,-72" on_scroll="true">
-                <sprite depth="0"
-                        name="contentOuter"
-                        sprite="menu_empty3px"
-                        width="397"
-                        height="616"
-                        color="0,230,138,75"
-                        type="sliced"
-                        fillcenter="false"/>
-                <sprite depth="1"
-                        name="contentBackground"
-                        sprite="menu_empty3px"
-                        pos="3,-3"
-                        width="391"
-                        height="610"
-                        color="5,16,18,245"
-                        type="sliced"/>
+                <sprite depth="0" name="contentOuter" sprite="menu_empty3px" width="397" height="616" color="0,230,138,75" type="sliced" fillcenter="false"/>
+                <sprite depth="1" name="contentBackground" sprite="menu_empty3px" pos="3,-3" width="391" height="610" color="5,16,18,245" type="sliced"/>
 
-                <rect depth="2" name="categorySelector" width="390" height="44" pos="3,-6">
-                    <sprite name="backgroundMain"
-                            sprite="menu_empty3px"
-                            pos="-3,3"
-                            width="396"
-                            height="49"
-                            color="0,230,138,80"
-                            type="sliced"
-                            fillcenter="false"/>
-                    <sprite color="8,30,29,255" type="sliced"/>
-                    <grid name="categories"
-                          pos="23,-21"
-                          rows="1"
-                          cols="9"
-                          width="390"
-                          height="43"
-                          cell_width="43"
-                          cell_height="43"
-                          repeat_content="true"
-                          controller="CategoryList">
+                <!-- Required controllers retained off-screen so CraftingListInfo initialises safely. -->
+                <rect depth="2" name="categorySelector" width="390" height="44" pos="-2000,-2000">
+                    <grid name="categories" rows="1" cols="9" width="390" height="43" cell_width="43" cell_height="43" repeat_content="true" controller="CategoryList">
                         <category_icon />
                     </grid>
                 </rect>
 
-                <rect depth="3" name="searchControls" width="390" height="44" pos="3,-52">
-                    <sprite name="backgroundMain"
-                            sprite="menu_empty3px"
-                            pos="-3,3"
-                            width="396"
-                            height="49"
-                            color="0,230,138,65"
-                            type="sliced"
-                            fillcenter="false"/>
-                    <sprite color="6,22,23,255" type="sliced"/>
-
-                    <button depth="4"
-                            name="favorites"
-                            style="icon30px, press"
-                            pos="18,-22"
-                            sprite="server_favorite"
-                            pivot="center"
-                            color="0,230,138,255"
-                            sound="[paging_click]"
-                            tooltip="Favorites"
-                            tooltip_key="lblFavorites"
-                            collider_scale="1.5"/>
-
-                    <rect pos="104,0" width="200">
-                        <sprite depth="4"
-                                name="searchIcon"
-                                style="icon30px"
-                                pos="0,-22"
-                                sprite="ui_game_symbol_search"
-                                pivot="center"
-                                color="0,230,138,255"/>
-                        <textfield depth="5"
-                                   name="searchInput"
-                                   pos="22,-7"
-                                   width="140"
-                                   height="30"
-                                   virtual_keyboard_prompt="vkPromptSearchTerm"
-                                   search_field="true"
-                                   close_group_on_tab="true"
-                                   clear_button="true"/>
+                <rect depth="3" name="searchControls" width="390" height="44" pos="-2000,-2050">
+                    <button depth="4" name="favorites" style="icon30px, press" sprite="server_favorite" sound="[paging_click]" tooltip="Favorites" tooltip_key="lblFavorites"/>
+                    <rect width="200">
+                        <textfield depth="5" name="searchInput" width="140" height="30" virtual_keyboard_prompt="vkPromptSearchTerm" search_field="true" close_group_on_tab="true" clear_button="true"/>
                     </rect>
-
-                    <rect pos="286,0" width="104" height="43">
-                        <pager name="pager" pos="4,-6" contents_parent="content"/>
+                    <rect width="104" height="43">
+                        <pager name="pager" contents_parent="content"/>
                     </rect>
                 </rect>
 
-                <!-- Required RecipeList controller and recipe_entry remain unchanged -->
+                <rect name="protocolHeader" depth="3" pos="8,-10" width="381" height="58">
+                    <sprite depth="0" sprite="menu_empty3px" width="381" height="58" color="0,230,138,70" type="sliced" fillcenter="false"/>
+                    <sprite depth="1" sprite="menu_empty3px" pos="2,-2" width="377" height="54" color="8,30,29,245" type="sliced"/>
+                    <label depth="2" pos="12,-7" width="357" height="28" text="DNA PROTOCOLS" font_size="27" color="0,230,138,255"/>
+                    <label depth="2" pos="12,-34" width="357" height="20" text="SELECT AN AVAILABLE GENETIC SEQUENCE" font_size="17" color="150,195,183,255"/>
+                </rect>
+
+                <!-- Four visible protocol recipe slots. -->
                 <grid name="recipes"
-                      depth="2"
-                      rows="11"
+                      depth="4"
+                      rows="4"
                       cols="1"
-                      pos="3,-98"
-                      width="390"
-                      height="506"
-                      cell_width="390"
-                      cell_height="46"
+                      pos="8,-80"
+                      width="381"
+                      height="224"
+                      cell_width="381"
+                      cell_height="56"
                       controller="RecipeList"
                       repeat_content="true"
                       arrangement="vertical">
                     <recipe_entry name="0"/>
                 </grid>
 
-                <!-- Presentation-only footer; no controller dependency -->
+                <rect name="protocolLegend" depth="3" pos="8,-320" width="381" height="190">
+                    <sprite depth="0" sprite="menu_empty3px" width="381" height="190" color="0,230,138,55" type="sliced" fillcenter="false"/>
+                    <sprite depth="1" sprite="menu_empty3px" pos="2,-2" width="377" height="186" color="6,22,23,245" type="sliced"/>
+                    <label depth="2" pos="14,-12" width="350" height="25" text="AVAILABLE BLOODLINES" font_size="22" color="0,230,138,255"/>
+                    <label depth="2" pos="18,-49" width="160" height="24" text="TERRA" font_size="21" color="96,200,120,255"/>
+                    <label depth="2" pos="198,-49" width="160" height="24" text="GAIA" font_size="21" color="127,227,109,255"/>
+                    <label depth="2" pos="18,-91" width="160" height="24" text="FORGE" font_size="21" color="229,138,58,255"/>
+                    <label depth="2" pos="198,-91" width="160" height="24" text="ORION" font_size="21" color="111,168,255,255"/>
+                    <label depth="2" pos="14,-137" width="350" height="34" text="SELECT A PROTOCOL TO VIEW ITS REQUIRED MATERIALS" font_size="17" color="150,195,183,255" justify="center"/>
+                </rect>
+
                 <rect name="readerStatus" depth="3" pos="6,-572" width="385" height="34">
-                    <sprite depth="0"
-                            sprite="menu_empty3px"
-                            width="385"
-                            height="34"
-                            color="0,230,138,60"
-                            type="sliced"
-                            fillcenter="false"/>
-                    <sprite depth="1"
-                            sprite="menu_empty3px"
-                            pos="2,-2"
-                            width="381"
-                            height="30"
-                            color="8,30,29,245"
-                            type="sliced"/>
-                    <label depth="2"
-                           pos="10,-6"
-                           width="250"
-                           height="24"
-                           text="HELIX LINK: STABLE"
-                           font_size="19"
-                           color="150,195,183,255"/>
-                    <label depth="2"
-                           pos="258,-6"
-                           width="115"
-                           height="24"
-                           text="READY"
-                           font_size="19"
-                           color="0,230,138,255"
-                           justify="right"/>
+                    <sprite depth="0" sprite="menu_empty3px" width="385" height="34" color="0,230,138,60" type="sliced" fillcenter="false"/>
+                    <sprite depth="1" sprite="menu_empty3px" pos="2,-2" width="381" height="30" color="8,30,29,245" type="sliced"/>
+                    <label depth="2" pos="10,-6" width="250" height="24" text="HELIX LINK: STABLE" font_size="19" color="150,195,183,255"/>
+                    <label depth="2" pos="258,-6" width="115" height="24" text="READY" font_size="19" color="0,230,138,255" justify="right"/>
                 </rect>
             </rect>
         </window>
