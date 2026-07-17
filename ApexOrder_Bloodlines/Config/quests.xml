@@ -55,13 +55,9 @@
         </quest>
 
         <quest id="quest_ApexBloodlines_09_GeneticResonance">
-            <property name="group_name_key" value="quest_ApexBloodlines_Story_Group"/><property name="name_key" value="quest_ApexBloodlines_09_name"/><property name="subtitle_key" value="quest_ApexBloodlines_09_subtitle"/><property name="description_key" value="quest_ApexBloodlines_09_description"/><property name="icon" value="ui_game_symbol_crafting"/><property name="category_key" value="quest"/><property name="add_to_tier_complete" value="false"/><property name="shareable" value="false"/><property name="reward_choices_count" value="1"/><property name="completion_key" value="quest_ApexBloodlines_09_completion"/>
+            <property name="group_name_key" value="quest_ApexBloodlines_Story_Group"/><property name="name_key" value="quest_ApexBloodlines_09_name"/><property name="subtitle_key" value="quest_ApexBloodlines_09_subtitle"/><property name="description_key" value="quest_ApexBloodlines_09_description"/><property name="icon" value="ui_game_symbol_crafting"/><property name="category_key" value="quest"/><property name="add_to_tier_complete" value="false"/><property name="shareable" value="false"/><property name="completion_key" value="quest_ApexBloodlines_09_completion"/>
             <objective type="Craft" id="ApexBloodlinesAnalysedHelixCore" value="1" phase="1"/>
             <reward type="Exp" value="500" isfixed="true"/>
-            <reward type="Item" id="ApexBloodlinesProtocolTerra" value="1" ischosen="true"/>
-            <reward type="Item" id="ApexBloodlinesProtocolGaia" value="1" ischosen="true"/>
-            <reward type="Item" id="ApexBloodlinesProtocolForge" value="1" ischosen="true"/>
-            <reward type="Item" id="ApexBloodlinesProtocolOrion" value="1" ischosen="true"/>
         </quest>
 
         <quest id="quest_ApexBloodlines_Terra_01_Resonance"><property name="group_name_key" value="quest_ApexBloodlines_Terra_Group"/><property name="name_key" value="quest_ApexBloodlines_Terra_01_name"/><property name="subtitle_key" value="quest_ApexBloodlines_Terra_01_subtitle"/><property name="description_key" value="quest_ApexBloodlines_Terra_01_description"/><property name="icon" value="ui_game_symbol_resource"/><property name="category_key" value="quest"/><property name="add_to_tier_complete" value="false"/><property name="shareable" value="false"/><objective type="FetchKeep" id="resourceClayLump" value="25" phase="1"/><reward type="Exp" value="500"/></quest>
