@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+    <append xpath="/quests/quest[@id='quest_ApexBloodlines_Terra_01_Resonance']">
+        <property name="offer_key" value="quest_ApexBloodlines_Terra_01_description"/>
+    </append>
+    <append xpath="/quests/quest[@id='quest_ApexBloodlines_Gaia_01_Resonance']">
+        <property name="offer_key" value="quest_ApexBloodlines_Gaia_01_description"/>
+    </append>
+    <append xpath="/quests/quest[@id='quest_ApexBloodlines_Forge_01_Resonance']">
+        <property name="offer_key" value="quest_ApexBloodlines_Forge_01_description"/>
+    </append>
+    <append xpath="/quests/quest[@id='quest_ApexBloodlines_Orion_01_Resonance']">
+        <property name="offer_key" value="quest_ApexBloodlines_Orion_01_description"/>
+    </append>
+</configs>
