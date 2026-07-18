@@ -1,0 +1,6 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+ApexBloodlinesTerraGenome,items,Item,false,false,TERRA Genome Implant
+ApexBloodlinesTerraGenomeDesc,items,Item,false,false,"Install this genome implant into an armour modification slot. While the armour is equipped the host enters TERRA integration and can extract TERRA Resonance through mining and excavation."
+ApexBloodlinesTerraResonance,items,Item,false,false,TERRA Resonance
+ApexBloodlinesTerraResonanceDesc,items,Item,false,false,"Geological information translated into a stable genetic signal. Generated only while the TERRA Genome Implant is active during mining or excavation."
+buffApexBloodlinesTerraIntegrated,items,Buff,false,false,TERRA Integration
