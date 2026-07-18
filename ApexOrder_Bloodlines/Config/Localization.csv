@@ -74,7 +74,29 @@ quest_ApexBloodlines_09_description,quests,Quest,false,false,"Insert the Dormant
 quest_ApexBloodlines_09_completion,quests,Quest,false,false,"ANALYSIS COMPLETE. Four viable integration protocols recovered. Return to the Helix Reader, review each Bloodline and craft one protocol. This decision cannot be reversed."
 quest_ApexBloodlines_Terra_01_name,quests,Quest,false,false,TERRA I - EARTHBOUND RESONANCE
 quest_ApexBloodlines_Terra_01_subtitle,quests,Quest,false,false,The Ground Answers
-quest_ApexBloodlines_Terra_01_description,quests,Quest,false,false,"The TERRA directive has bonded with the Helix Core. Dense mineral signatures now register as biological data. Gather clay to establish the first stable resonance."
+quest_ApexBloodlines_Terra_01_description,quests,Quest,false,false,"The TERRA directive has entered its first integration cycle. Gather clay and stone so the Helix can map the mineral structure of the surrounding world."
+quest_ApexBloodlines_Terra_02_name,quests,Quest,false,false,TERRA II - MINERAL MEMORY
+quest_ApexBloodlines_Terra_02_subtitle,quests,Quest,false,false,Iron Remembers Pressure
+quest_ApexBloodlines_Terra_02_description,quests,Quest,false,false,"The Helix is beginning to recognise processed ore as stored geological memory. Recover scrap iron and additional stone to strengthen the pattern."
+quest_ApexBloodlines_Terra_03_name,quests,Quest,false,false,TERRA III - BURIED SIGNALS
+quest_ApexBloodlines_Terra_03_subtitle,quests,Quest,false,false,Decode the Deep Veins
+quest_ApexBloodlines_Terra_03_description,quests,Quest,false,false,"Coal, nitrate and lead carry distinct signatures formed under pressure. Extract each resource so TERRA can compare the buried signals."
+quest_ApexBloodlines_Terra_04_name,quests,Quest,false,false,TERRA IV - COMPRESSION
+quest_ApexBloodlines_Terra_04_subtitle,quests,Quest,false,false,Shape Matter Through Force
+quest_ApexBloodlines_Terra_04_description,quests,Quest,false,false,"Raw mineral memory is unstable. Gather forged iron and mechanical components so the Helix can study matter altered by heat, force and deliberate construction."
+quest_ApexBloodlines_Terra_05_name,quests,Quest,false,false,TERRA V - STONEBLOOD
+quest_ApexBloodlines_Terra_05_subtitle,quests,Quest,false,false,Prove Structural Resilience
+quest_ApexBloodlines_Terra_05_description,quests,Quest,false,false,"TERRA now reinforces muscle and bone, but the adaptation must survive violent stress. Eliminate infected entities and allow the Helix to record the strain."
+quest_ApexBloodlines_Terra_06_name,quests,Quest,false,false,TERRA VI - DEEP VEIN
+quest_ApexBloodlines_Terra_06_subtitle,quests,Quest,false,false,Feed the Growing Resonance
+quest_ApexBloodlines_Terra_06_description,quests,Quest,false,false,"The integration is consuming mineral data at an accelerating rate. Gather a major reserve of clay, stone and iron to stabilise the deep-vein sequence."
+quest_ApexBloodlines_Terra_07_name,quests,Quest,false,false,TERRA VII - SEISMIC TRIAL
+quest_ApexBloodlines_Terra_07_subtitle,quests,Quest,false,false,Stand Against Repeated Impact
+quest_ApexBloodlines_Terra_07_description,quests,Quest,false,false,"The Helix predicts that TERRA can withstand sustained trauma. Face the infected again and complete the final biological stress test."
+quest_ApexBloodlines_Terra_08_name,quests,Quest,false,false,TERRA VIII - CORE INTEGRATION
+quest_ApexBloodlines_Terra_08_subtitle,quests,Quest,false,false,Complete the Earthbound Sequence
+quest_ApexBloodlines_Terra_08_description,quests,Quest,false,false,"The TERRA pattern is ready to become permanent. Assemble forged iron, mechanical parts and electrical components for the final integration cycle."
+quest_ApexBloodlines_Terra_08_completion,quests,Quest,false,false,"TERRA INTEGRATION COMPLETE. Mineral density, structural resilience and earthbound resonance have stabilised within the host. Further adaptations will build upon this foundation."
 quest_ApexBloodlines_Gaia_01_name,quests,Quest,false,false,GAIA I - VERDANT RESONANCE
 quest_ApexBloodlines_Gaia_01_subtitle,quests,Quest,false,false,Life Answers
 quest_ApexBloodlines_Gaia_01_description,quests,Quest,false,false,"The GAIA directive has bonded with the Helix Core. Living plant matter now carries a repeating biological signature. Gather plant fibres to stabilise it."
