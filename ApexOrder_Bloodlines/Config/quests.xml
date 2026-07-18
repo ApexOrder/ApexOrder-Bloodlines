@@ -46,21 +46,68 @@
             <objective type="InteractWithNPC"><property name="phase" value="2"/><property name="nav_object" value="return_to_trader"/><property name="use_closest" value="true"/></objective>
             <reward type="Exp" value="400"/><reward type="Item" id="gunHandgunT0PipePistol" value="1"/><reward type="Item" id="ammo9mmBulletBall" value="25"/><reward type="Item" id="ApexBloodlinesDormantHelixCore" value="1"/><reward type="Quest" id="quest_ApexBloodlines_08_TheSignal"/>
         </quest>
-
         <quest id="quest_ApexBloodlines_08_TheSignal">
             <property name="group_name_key" value="quest_ApexBloodlines_Story_Group"/><property name="name_key" value="quest_ApexBloodlines_08_name"/><property name="subtitle_key" value="quest_ApexBloodlines_08_subtitle"/><property name="description_key" value="quest_ApexBloodlines_08_description"/><property name="icon" value="ui_game_symbol_crafting"/><property name="category_key" value="quest"/><property name="add_to_tier_complete" value="false"/><property name="shareable" value="false"/>
             <objective type="Craft" id="ApexBloodlinesPrimitiveHelixReader" value="1" phase="1"/>
             <objective type="BlockPlace" id="ApexBloodlinesPrimitiveHelixReader" value="1" phase="2"/>
             <reward type="Exp" value="350"/><reward type="Quest" id="quest_ApexBloodlines_09_GeneticResonance"/>
         </quest>
-
         <quest id="quest_ApexBloodlines_09_GeneticResonance">
             <property name="group_name_key" value="quest_ApexBloodlines_Story_Group"/><property name="name_key" value="quest_ApexBloodlines_09_name"/><property name="subtitle_key" value="quest_ApexBloodlines_09_subtitle"/><property name="description_key" value="quest_ApexBloodlines_09_description"/><property name="icon" value="ui_game_symbol_crafting"/><property name="category_key" value="quest"/><property name="add_to_tier_complete" value="false"/><property name="shareable" value="false"/><property name="completion_key" value="quest_ApexBloodlines_09_completion"/>
             <objective type="Craft" id="ApexBloodlinesAnalysedHelixCore" value="1" phase="1"/>
             <reward type="Exp" value="500" isfixed="true"/>
         </quest>
 
-        <quest id="quest_ApexBloodlines_Terra_01_Resonance"><property name="group_name_key" value="quest_ApexBloodlines_Terra_Group"/><property name="name_key" value="quest_ApexBloodlines_Terra_01_name"/><property name="subtitle_key" value="quest_ApexBloodlines_Terra_01_subtitle"/><property name="description_key" value="quest_ApexBloodlines_Terra_01_description"/><property name="icon" value="ui_game_symbol_resource"/><property name="category_key" value="quest"/><property name="add_to_tier_complete" value="false"/><property name="shareable" value="false"/><objective type="FetchKeep" id="resourceClayLump" value="25" phase="1"/><reward type="Exp" value="500"/></quest>
+        <quest id="quest_ApexBloodlines_Terra_01_Resonance">
+            <property name="group_name_key" value="quest_ApexBloodlines_Terra_Group"/><property name="name_key" value="quest_ApexBloodlines_Terra_01_name"/><property name="subtitle_key" value="quest_ApexBloodlines_Terra_01_subtitle"/><property name="description_key" value="quest_ApexBloodlines_Terra_01_description"/><property name="icon" value="ui_game_symbol_resource"/><property name="category_key" value="quest"/><property name="add_to_tier_complete" value="false"/><property name="shareable" value="false"/>
+            <objective type="FetchKeep" id="resourceClayLump" value="100" phase="1"/>
+            <objective type="FetchKeep" id="resourceRockSmall" value="100" phase="1"/>
+            <reward type="Exp" value="750"/><reward type="Quest" id="quest_ApexBloodlines_Terra_02_MineralMemory"/>
+        </quest>
+        <quest id="quest_ApexBloodlines_Terra_02_MineralMemory">
+            <property name="group_name_key" value="quest_ApexBloodlines_Terra_Group"/><property name="name_key" value="quest_ApexBloodlines_Terra_02_name"/><property name="subtitle_key" value="quest_ApexBloodlines_Terra_02_subtitle"/><property name="description_key" value="quest_ApexBloodlines_Terra_02_description"/><property name="icon" value="ui_game_symbol_resource"/><property name="category_key" value="quest"/><property name="add_to_tier_complete" value="false"/><property name="shareable" value="false"/>
+            <objective type="FetchKeep" id="resourceScrapIron" value="250" phase="1"/>
+            <objective type="FetchKeep" id="resourceRockSmall" value="250" phase="1"/>
+            <reward type="Exp" value="1000"/><reward type="Item" id="resourceForgedIron" value="10"/><reward type="Quest" id="quest_ApexBloodlines_Terra_03_BuriedSignals"/>
+        </quest>
+        <quest id="quest_ApexBloodlines_Terra_03_BuriedSignals">
+            <property name="group_name_key" value="quest_ApexBloodlines_Terra_Group"/><property name="name_key" value="quest_ApexBloodlines_Terra_03_name"/><property name="subtitle_key" value="quest_ApexBloodlines_Terra_03_subtitle"/><property name="description_key" value="quest_ApexBloodlines_Terra_03_description"/><property name="icon" value="ui_game_symbol_resource"/><property name="category_key" value="quest"/><property name="add_to_tier_complete" value="false"/><property name="shareable" value="false"/>
+            <objective type="FetchKeep" id="resourceCoal" value="100" phase="1"/>
+            <objective type="FetchKeep" id="resourceNitratePowder" value="100" phase="1"/>
+            <objective type="FetchKeep" id="resourceScrapLead" value="100" phase="1"/>
+            <reward type="Exp" value="1250"/><reward type="Quest" id="quest_ApexBloodlines_Terra_04_Compression"/>
+        </quest>
+        <quest id="quest_ApexBloodlines_Terra_04_Compression">
+            <property name="group_name_key" value="quest_ApexBloodlines_Terra_Group"/><property name="name_key" value="quest_ApexBloodlines_Terra_04_name"/><property name="subtitle_key" value="quest_ApexBloodlines_Terra_04_subtitle"/><property name="description_key" value="quest_ApexBloodlines_Terra_04_description"/><property name="icon" value="ui_game_symbol_hammer"/><property name="category_key" value="quest"/><property name="add_to_tier_complete" value="false"/><property name="shareable" value="false"/>
+            <objective type="FetchKeep" id="resourceForgedIron" value="25" phase="1"/>
+            <objective type="FetchKeep" id="resourceMechanicalParts" value="5" phase="1"/>
+            <reward type="Exp" value="1500"/><reward type="Quest" id="quest_ApexBloodlines_Terra_05_Stoneblood"/>
+        </quest>
+        <quest id="quest_ApexBloodlines_Terra_05_Stoneblood">
+            <property name="group_name_key" value="quest_ApexBloodlines_Terra_Group"/><property name="name_key" value="quest_ApexBloodlines_Terra_05_name"/><property name="subtitle_key" value="quest_ApexBloodlines_Terra_05_subtitle"/><property name="description_key" value="quest_ApexBloodlines_Terra_05_description"/><property name="icon" value="ui_game_symbol_zombie"/><property name="category_key" value="quest"/><property name="add_to_tier_complete" value="false"/><property name="shareable" value="false"/>
+            <objective type="EntityKill" target_tags="zombie" needed_count="25" phase="1"/>
+            <reward type="Exp" value="1750"/><reward type="Quest" id="quest_ApexBloodlines_Terra_06_DeepVein"/>
+        </quest>
+        <quest id="quest_ApexBloodlines_Terra_06_DeepVein">
+            <property name="group_name_key" value="quest_ApexBloodlines_Terra_Group"/><property name="name_key" value="quest_ApexBloodlines_Terra_06_name"/><property name="subtitle_key" value="quest_ApexBloodlines_Terra_06_subtitle"/><property name="description_key" value="quest_ApexBloodlines_Terra_06_description"/><property name="icon" value="ui_game_symbol_resource"/><property name="category_key" value="quest"/><property name="add_to_tier_complete" value="false"/><property name="shareable" value="false"/>
+            <objective type="FetchKeep" id="resourceClayLump" value="500" phase="1"/>
+            <objective type="FetchKeep" id="resourceRockSmall" value="1000" phase="1"/>
+            <objective type="FetchKeep" id="resourceScrapIron" value="500" phase="1"/>
+            <reward type="Exp" value="2250"/><reward type="Item" id="resourceForgedIron" value="25"/><reward type="Quest" id="quest_ApexBloodlines_Terra_07_SeismicTrial"/>
+        </quest>
+        <quest id="quest_ApexBloodlines_Terra_07_SeismicTrial">
+            <property name="group_name_key" value="quest_ApexBloodlines_Terra_Group"/><property name="name_key" value="quest_ApexBloodlines_Terra_07_name"/><property name="subtitle_key" value="quest_ApexBloodlines_Terra_07_subtitle"/><property name="description_key" value="quest_ApexBloodlines_Terra_07_description"/><property name="icon" value="ui_game_symbol_zombie"/><property name="category_key" value="quest"/><property name="add_to_tier_complete" value="false"/><property name="shareable" value="false"/>
+            <objective type="EntityKill" target_tags="zombie" needed_count="50" phase="1"/>
+            <reward type="Exp" value="3000"/><reward type="Quest" id="quest_ApexBloodlines_Terra_08_CoreIntegration"/>
+        </quest>
+        <quest id="quest_ApexBloodlines_Terra_08_CoreIntegration">
+            <property name="group_name_key" value="quest_ApexBloodlines_Terra_Group"/><property name="name_key" value="quest_ApexBloodlines_Terra_08_name"/><property name="subtitle_key" value="quest_ApexBloodlines_Terra_08_subtitle"/><property name="description_key" value="quest_ApexBloodlines_Terra_08_description"/><property name="icon" value="ui_game_symbol_hammer"/><property name="category_key" value="quest"/><property name="add_to_tier_complete" value="false"/><property name="shareable" value="false"/><property name="completion_key" value="quest_ApexBloodlines_Terra_08_completion"/>
+            <objective type="FetchKeep" id="resourceForgedIron" value="100" phase="1"/>
+            <objective type="FetchKeep" id="resourceMechanicalParts" value="10" phase="1"/>
+            <objective type="FetchKeep" id="resourceElectricParts" value="10" phase="1"/>
+            <reward type="Exp" value="5000"/><reward type="Item" id="resourceForgedIron" value="50"/>
+        </quest>
+
         <quest id="quest_ApexBloodlines_Gaia_01_Resonance"><property name="group_name_key" value="quest_ApexBloodlines_Gaia_Group"/><property name="name_key" value="quest_ApexBloodlines_Gaia_01_name"/><property name="subtitle_key" value="quest_ApexBloodlines_Gaia_01_subtitle"/><property name="description_key" value="quest_ApexBloodlines_Gaia_01_description"/><property name="icon" value="ui_game_symbol_resource"/><property name="category_key" value="quest"/><property name="add_to_tier_complete" value="false"/><property name="shareable" value="false"/><objective type="FetchKeep" id="resourceYuccaFibers" value="50" phase="1"/><reward type="Exp" value="500"/></quest>
         <quest id="quest_ApexBloodlines_Forge_01_Resonance"><property name="group_name_key" value="quest_ApexBloodlines_Forge_Group"/><property name="name_key" value="quest_ApexBloodlines_Forge_01_name"/><property name="subtitle_key" value="quest_ApexBloodlines_Forge_01_subtitle"/><property name="description_key" value="quest_ApexBloodlines_Forge_01_description"/><property name="icon" value="ui_game_symbol_hammer"/><property name="category_key" value="quest"/><property name="add_to_tier_complete" value="false"/><property name="shareable" value="false"/><objective type="FetchKeep" id="resourceScrapIron" value="100" phase="1"/><reward type="Exp" value="500"/></quest>
         <quest id="quest_ApexBloodlines_Orion_01_Resonance"><property name="group_name_key" value="quest_ApexBloodlines_Orion_Group"/><property name="name_key" value="quest_ApexBloodlines_Orion_01_name"/><property name="subtitle_key" value="quest_ApexBloodlines_Orion_01_subtitle"/><property name="description_key" value="quest_ApexBloodlines_Orion_01_description"/><property name="icon" value="ui_game_symbol_crafting"/><property name="category_key" value="quest"/><property name="add_to_tier_complete" value="false"/><property name="shareable" value="false"/><objective type="FetchKeep" id="resourceElectricParts" value="5" phase="1"/><reward type="Exp" value="500"/></quest>
