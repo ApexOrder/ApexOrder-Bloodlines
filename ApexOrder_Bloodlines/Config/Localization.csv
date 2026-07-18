@@ -43,6 +43,18 @@ ApexBloodlinesProtocolForge,items,Item,false,false,FORGE PROTOCOL
 ApexBloodlinesProtocolForgeDesc,items,Item,false,false,"MECHANICAL ADAPTATION\n\nFORGE specialises in engineering, weapons and machine integration. It is built for players who want advanced fabrication, stronger technology and improved mechanical combat.\n\nPRIMARY MATERIALS: Scrap iron, forged metal and mechanical parts.\nMUTATION RISK: Medium.\n\nCrafting this protocol consumes the Analysed Helix Core and permanently rejects the other Bloodlines."
 ApexBloodlinesProtocolOrion,items,Item,false,false,ORION PROTOCOL
 ApexBloodlinesProtocolOrionDesc,items,Item,false,false,"NEURAL ADAPTATION\n\nORION specialises in electronics, information and precision. It is built for players who want faster technological progression, better detection and high-end energy systems.\n\nPRIMARY MATERIALS: Electrical parts, electronics and encoded data.\nMUTATION RISK: High.\n\nCrafting this protocol consumes the Analysed Helix Core and permanently rejects the other Bloodlines."
+ApexBloodlinesTerraStoneAnalysis,items,Item,false,false,TERRA Stone Analysis
+ApexBloodlinesTerraStoneAnalysisDesc,items,Item,false,false,"A compressed geological profile created by the Helix Reader from clay and stone."
+ApexBloodlinesTerraVeinSample,items,Item,false,false,TERRA Vein Sample
+ApexBloodlinesTerraVeinSampleDesc,items,Item,false,false,"A calibrated mineral sample containing iron, coal, nitrate and lead signatures."
+ApexBloodlinesTerraFoundationCore,items,Item,false,false,TERRA Foundation Core
+ApexBloodlinesTerraFoundationCoreDesc,items,Item,false,false,"A dense structural core designed to teach the Helix how constructed matter bears weight."
+ApexBloodlinesTerraSeismicCore,items,Item,false,false,TERRA Seismic Core
+ApexBloodlinesTerraSeismicCoreDesc,items,Item,false,false,"A compressed archive of deep-vein pressure and earthbound resonance."
+ApexBloodlinesTerraGenomeMatrix,items,Item,false,false,TERRA Genome Matrix
+ApexBloodlinesTerraGenomeMatrixDesc,items,Item,false,false,"A partially assembled genome matrix awaiting final mineral integration."
+ApexBloodlinesTerraIntegratedGenome,items,Item,false,false,TERRA Integrated Genome
+ApexBloodlinesTerraIntegratedGenomeDesc,items,Item,false,false,"The completed TERRA sequence. Its mineral pattern has permanently bonded to the host."
 quest_ApexBloodlines_01_name,quests,Quest,false,false,PROTOCOL 01 - AWAKENING
 quest_ApexBloodlines_01_subtitle,quests,Quest,false,false,Gather Fibres Sticks and Stones
 quest_ApexBloodlines_01_description,quests,Quest,false,false,"Consciousness returns in fragments. Gather plant fibres, sticks and small stones from the surrounding area."
@@ -54,7 +66,7 @@ quest_ApexBloodlines_03_subtitle,quests,Quest,false,false,Construct a Crude Axe
 quest_ApexBloodlines_03_description,quests,Quest,false,false,"Combine rope, sticks and stone to construct a crude axe."
 quest_ApexBloodlines_04_name,quests,Quest,false,false,PROTOCOL 04 - PRIMITIVE PROTECTION
 quest_ApexBloodlines_04_subtitle,quests,Quest,false,false,Arm and Protect the Body
-quest_ApexBloodlines_04_description,quests,Quest,false,false,"Use the Crude Axe to cut branches and strip bark from trees. Recover sharp stone while mining. Construct a Crude Pike and a complete set of bark armour, then equip every piece."
+quest_ApexBloodlines_04_description,quests,Quest,false,false,"Use the Crude Axe to cut branches and strip bark from trees. Recover sharp stone while mining. Construct a Crude Pike and a complete set of bark armour."
 quest_ApexBloodlines_05_name,quests,Quest,false,false,PROTOCOL 05 - ESTABLISH SHELTER
 quest_ApexBloodlines_05_subtitle,quests,Quest,false,false,Create a Safe Location
 quest_ApexBloodlines_05_description,quests,Quest,false,false,"Craft any available bedroll colour and place it, then craft and place a campfire to establish a temporary shelter."
@@ -64,7 +76,7 @@ quest_ApexBloodlines_06_description,quests,Quest,false,false,"Eliminate five inf
 quest_ApexBloodlines_07_name,quests,Quest,false,false,PROTOCOL 07 - CONTACT ESTABLISHED
 quest_ApexBloodlines_07_subtitle,quests,Quest,false,false,Speak to the Trader
 quest_ApexBloodlines_07_description,quests,Quest,false,false,"The survival transmission has identified a nearby survivor outpost. Reach the trader and establish contact."
-quest_ApexBloodlines_07_completion,quests,Quest,false,false,"Hold on... that thing is reacting to you. Some scavenger pawned it here months ago and claimed he found it inside an underground facility. It has been dead ever since. Then you walk in and it starts lighting up. You are not the first person it has done this to... and I doubt you will be the last. Take it. Just be careful what you wake up."
+quest_ApexBloodlines_07_completion,quests,Quest,false,false,"Hold on... that thing is reacting to you. Some scavenger pawned it here months ago and claimed he found it inside an underground facility. It has been dead ever since. Then you walk in and it starts lighting up. Take it. Just be careful what you wake up."
 quest_ApexBloodlines_08_name,quests,Quest,false,false,BLOODLINES I - THE READER
 quest_ApexBloodlines_08_subtitle,quests,Quest,false,false,Construct and Place the Helix Reader
 quest_ApexBloodlines_08_description,quests,Quest,false,false,"The core is broadcasting a structured signal. Rebuild a forge into a Primitive Helix Reader and place it somewhere secure."
@@ -74,29 +86,50 @@ quest_ApexBloodlines_09_description,quests,Quest,false,false,"Insert the Dormant
 quest_ApexBloodlines_09_completion,quests,Quest,false,false,"ANALYSIS COMPLETE. Four viable integration protocols recovered. Return to the Helix Reader, review each Bloodline and craft one protocol. This decision cannot be reversed."
 quest_ApexBloodlines_Terra_01_name,quests,Quest,false,false,TERRA I - EARTHBOUND RESONANCE
 quest_ApexBloodlines_Terra_01_subtitle,quests,Quest,false,false,The Ground Answers
-quest_ApexBloodlines_Terra_01_description,quests,Quest,false,false,"The TERRA directive has entered its first integration cycle. Gather clay and stone so the Helix can map the mineral structure of the surrounding world."
-quest_ApexBloodlines_Terra_02_name,quests,Quest,false,false,TERRA II - MINERAL MEMORY
-quest_ApexBloodlines_Terra_02_subtitle,quests,Quest,false,false,Iron Remembers Pressure
-quest_ApexBloodlines_Terra_02_description,quests,Quest,false,false,"The Helix is beginning to recognise processed ore as stored geological memory. Recover scrap iron and additional stone to strengthen the pattern."
-quest_ApexBloodlines_Terra_03_name,quests,Quest,false,false,TERRA III - BURIED SIGNALS
-quest_ApexBloodlines_Terra_03_subtitle,quests,Quest,false,false,Decode the Deep Veins
-quest_ApexBloodlines_Terra_03_description,quests,Quest,false,false,"Coal, nitrate and lead carry distinct signatures formed under pressure. Extract each resource so TERRA can compare the buried signals."
-quest_ApexBloodlines_Terra_04_name,quests,Quest,false,false,TERRA IV - COMPRESSION
-quest_ApexBloodlines_Terra_04_subtitle,quests,Quest,false,false,Shape Matter Through Force
-quest_ApexBloodlines_Terra_04_description,quests,Quest,false,false,"Raw mineral memory is unstable. Gather forged iron and mechanical components so the Helix can study matter altered by heat, force and deliberate construction."
-quest_ApexBloodlines_Terra_05_name,quests,Quest,false,false,TERRA V - STONEBLOOD
-quest_ApexBloodlines_Terra_05_subtitle,quests,Quest,false,false,Prove Structural Resilience
-quest_ApexBloodlines_Terra_05_description,quests,Quest,false,false,"TERRA now reinforces muscle and bone, but the adaptation must survive violent stress. Eliminate infected entities and allow the Helix to record the strain."
-quest_ApexBloodlines_Terra_06_name,quests,Quest,false,false,TERRA VI - DEEP VEIN
+quest_ApexBloodlines_Terra_01_description,quests,Quest,false,false,"The protocol has accepted your genome, but acceptance is not integration. Recover enough clay and stone for the Helix Reader to build its first geological map, then compress the data into a Stone Analysis."
+quest_ApexBloodlines_Terra_02_name,quests,Quest,false,false,TERRA II - THE FIRST VEIN
+quest_ApexBloodlines_Terra_02_subtitle,quests,Quest,false,false,Learn the Language of Ore
+quest_ApexBloodlines_Terra_02_description,quests,Quest,false,false,"Common stone is only the surface layer. Extract iron, coal, nitrate and lead in meaningful quantities and fuse their signatures into a Vein Sample."
+quest_ApexBloodlines_Terra_03_name,quests,Quest,false,false,TERRA III - FOUNDATIONS
+quest_ApexBloodlines_Terra_03_subtitle,quests,Quest,false,false,Prove You Can Build What Lasts
+quest_ApexBloodlines_Terra_03_description,quests,Quest,false,false,"TERRA does not recognise temporary shelters as survival. Accumulate the timber, stone and processed components needed for a permanent earthbound stronghold."
+quest_ApexBloodlines_Terra_04_name,quests,Quest,false,false,TERRA IV - FOUNDATION CORE
+quest_ApexBloodlines_Terra_04_subtitle,quests,Quest,false,false,Teach the Helix Structural Memory
+quest_ApexBloodlines_Terra_04_description,quests,Quest,false,false,"Feed the gathered materials and the Vein Sample into the Helix Reader. The resulting Foundation Core will preserve the memory of weight, pressure and deliberate construction."
+quest_ApexBloodlines_Terra_05_name,quests,Quest,false,false,TERRA V - PRESSURE
+quest_ApexBloodlines_Terra_05_subtitle,quests,Quest,false,false,Survive Repeated Impact
+quest_ApexBloodlines_Terra_05_description,quests,Quest,false,false,"The adaptation now reinforces muscle and bone. Put that change under sustained stress, then return to excavation while the Helix records how your body responds."
+quest_ApexBloodlines_Terra_06_name,quests,Quest,false,false,TERRA VI - DEEP VEINS
 quest_ApexBloodlines_Terra_06_subtitle,quests,Quest,false,false,Feed the Growing Resonance
-quest_ApexBloodlines_Terra_06_description,quests,Quest,false,false,"The integration is consuming mineral data at an accelerating rate. Gather a major reserve of clay, stone and iron to stabilise the deep-vein sequence."
-quest_ApexBloodlines_Terra_07_name,quests,Quest,false,false,TERRA VII - SEISMIC TRIAL
-quest_ApexBloodlines_Terra_07_subtitle,quests,Quest,false,false,Stand Against Repeated Impact
-quest_ApexBloodlines_Terra_07_description,quests,Quest,false,false,"The Helix predicts that TERRA can withstand sustained trauma. Face the infected again and complete the final biological stress test."
-quest_ApexBloodlines_Terra_08_name,quests,Quest,false,false,TERRA VIII - CORE INTEGRATION
-quest_ApexBloodlines_Terra_08_subtitle,quests,Quest,false,false,Complete the Earthbound Sequence
-quest_ApexBloodlines_Terra_08_description,quests,Quest,false,false,"The TERRA pattern is ready to become permanent. Assemble forged iron, mechanical parts and electrical components for the final integration cycle."
-quest_ApexBloodlines_Terra_08_completion,quests,Quest,false,false,"TERRA INTEGRATION COMPLETE. Mineral density, structural resilience and earthbound resonance have stabilised within the host. Further adaptations will build upon this foundation."
+quest_ApexBloodlines_Terra_06_description,quests,Quest,false,false,"The Foundation Core has begun detecting pressure patterns from deeper strata. Gather a substantial reserve of stone, clay and iron to expose the next layer of the sequence."
+quest_ApexBloodlines_Terra_07_name,quests,Quest,false,false,TERRA VII - SEISMIC CORE
+quest_ApexBloodlines_Terra_07_subtitle,quests,Quest,false,false,Compress the Deep-Vein Archive
+quest_ApexBloodlines_Terra_07_description,quests,Quest,false,false,"The Helix Reader can now compress the Foundation Core and deep-vein reserves into a Seismic Core. This is the first component capable of rewriting the host rather than merely observing it."
+quest_ApexBloodlines_Terra_08_name,quests,Quest,false,false,TERRA VIII - STONEBLOOD
+quest_ApexBloodlines_Terra_08_subtitle,quests,Quest,false,false,Let the Adaptation Harden
+quest_ApexBloodlines_Terra_08_description,quests,Quest,false,false,"The Seismic Core is changing the density of your tissue. Survive a prolonged combat cycle and accumulate forged material while the new structure stabilises."
+quest_ApexBloodlines_Terra_09_name,quests,Quest,false,false,TERRA IX - THE GREAT EXCAVATION
+quest_ApexBloodlines_Terra_09_subtitle,quests,Quest,false,false,Strip the World to Its Memory
+quest_ApexBloodlines_Terra_09_description,quests,Quest,false,false,"A vast mineral reserve is required for the next stage. This is not a sample run. Establish a serious mining operation and extract enough material to feed a full genomic reconstruction."
+quest_ApexBloodlines_Terra_10_name,quests,Quest,false,false,TERRA X - GENOME MATRIX
+quest_ApexBloodlines_Terra_10_subtitle,quests,Quest,false,false,Assemble the Earthbound Pattern
+quest_ApexBloodlines_Terra_10_description,quests,Quest,false,false,"The Seismic Core has enough geological memory to form a living template. Construct the TERRA Genome Matrix in the Helix Reader."
+quest_ApexBloodlines_Terra_11_name,quests,Quest,false,false,TERRA XI - ANCIENT STRATA
+quest_ApexBloodlines_Terra_11_subtitle,quests,Quest,false,false,Recover the Oldest Pressure Signatures
+quest_ApexBloodlines_Terra_11_description,quests,Quest,false,false,"The matrix is missing signatures formed over immense periods of heat and pressure. Recover deep reserves of coal, nitrate and lead to complete the archive."
+quest_ApexBloodlines_Terra_12_name,quests,Quest,false,false,TERRA XII - EARTH'S VOICE
+quest_ApexBloodlines_Terra_12_subtitle,quests,Quest,false,false,Give the Matrix a Machine to Speak Through
+quest_ApexBloodlines_Terra_12_description,quests,Quest,false,false,"The matrix now produces a repeating pulse, but it cannot sustain itself. Gather forged iron, mechanical parts and electrical components for the final integration assembly."
+quest_ApexBloodlines_Terra_13_name,quests,Quest,false,false,TERRA XIII - THE MOUNTAIN WAKES
+quest_ApexBloodlines_Terra_13_subtitle,quests,Quest,false,false,Prove the Pattern Cannot Break
+quest_ApexBloodlines_Terra_13_description,quests,Quest,false,false,"The Helix has begun treating your body as a geological structure. Endure an extended combat trial and continue mining until the signal remains stable under every recorded strain."
+quest_ApexBloodlines_Terra_14_name,quests,Quest,false,false,TERRA XIV - INTEGRATION
+quest_ApexBloodlines_Terra_14_subtitle,quests,Quest,false,false,Cross the Point of No Return
+quest_ApexBloodlines_Terra_14_description,quests,Quest,false,false,"All required signatures are present. Use the Helix Reader to bind the Genome Matrix to the accumulated mineral archive and create the Integrated TERRA Genome."
+quest_ApexBloodlines_Terra_15_name,quests,Quest,false,false,TERRA XV - ASCENDANT
+quest_ApexBloodlines_Terra_15_subtitle,quests,Quest,false,false,Complete the Earthbound Trial
+quest_ApexBloodlines_Terra_15_description,quests,Quest,false,false,"The genome is complete, but the Helix demands one final proof. Carry the integrated sequence through a massive combat and excavation cycle. When it remains stable, TERRA will become permanent."
+quest_ApexBloodlines_Terra_15_completion,quests,Quest,false,false,"TERRA INTEGRATION COMPLETE. MINERAL DENSITY: STABLE. STRUCTURAL MEMORY: STABLE. EARTHBOUND RESONANCE: PERMANENT. The Helix no longer identifies you as a compatible subject. It identifies you as TERRA."
 quest_ApexBloodlines_Gaia_01_name,quests,Quest,false,false,GAIA I - VERDANT RESONANCE
 quest_ApexBloodlines_Gaia_01_subtitle,quests,Quest,false,false,Life Answers
 quest_ApexBloodlines_Gaia_01_description,quests,Quest,false,false,"The GAIA directive has bonded with the Helix Core. Living plant matter now carries a repeating biological signature. Gather plant fibres to stabilise it."
