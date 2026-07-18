@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configs>
     <removeattribute xpath="/recipes/recipe[@name='resourceGlue' and @craft_area='campfire']/@craft_tool"/>
-    <append xpath="/recipes/recipe[@name='resourceGlue' and @craft_area='campfire']">
-        <ingredient name="drinkJarEmpty" count="1"/>
-    </append>
-
+    <append xpath="/recipes/recipe[@name='resourceGlue' and @craft_area='campfire']"><ingredient name="drinkJarEmpty" count="1"/></append>
     <append xpath="/recipes">
         <recipe name="ApexBloodlinesResourceRope" count="1" craft_time="3" tags="packMuleCrafting"><ingredient name="resourceYuccaFibers" count="5"/></recipe>
         <recipe name="ApexBloodlinesToolCrudeAxe" count="1" craft_time="8" tags="packMuleCrafting"><ingredient name="ApexBloodlinesResourceRope" count="2"/><ingredient name="ApexBloodlinesResourceStick" count="2"/><ingredient name="resourceRockSmall" count="3"/></recipe>
@@ -13,37 +10,18 @@
         <recipe name="ApexBloodlinesArmorBarkOutfit" count="1" craft_time="15" tags="packMuleCrafting"><ingredient name="ApexBloodlinesResourceBark" count="12"/><ingredient name="ApexBloodlinesResourceRope" count="3"/><ingredient name="ApexBloodlinesResourceStick" count="4"/></recipe>
         <recipe name="ApexBloodlinesArmorBarkGloves" count="1" craft_time="8" tags="packMuleCrafting"><ingredient name="ApexBloodlinesResourceBark" count="5"/><ingredient name="ApexBloodlinesResourceRope" count="1"/><ingredient name="ApexBloodlinesResourceStick" count="2"/></recipe>
         <recipe name="ApexBloodlinesArmorBarkBoots" count="1" craft_time="10" tags="packMuleCrafting"><ingredient name="ApexBloodlinesResourceBark" count="7"/><ingredient name="ApexBloodlinesResourceRope" count="2"/><ingredient name="ApexBloodlinesResourceStick" count="2"/></recipe>
+        <recipe name="ApexBloodlinesPrimitiveHelixReader" count="1" craft_time="30" tags="packMuleCrafting"><ingredient name="resourceForgedIron" count="10"/><ingredient name="resourceElectricParts" count="6"/><ingredient name="resourceMechanicalParts" count="4"/><ingredient name="resourceDuctTape" count="2"/></recipe>
+        <recipe name="ApexBloodlinesAnalysedHelixCore" count="1" craft_time="15" craft_area="ApexBloodlinesHelixReader"><ingredient name="ApexBloodlinesDormantHelixCore" count="1"/></recipe>
+        <recipe name="ApexBloodlinesProtocolTerra" count="1" craft_time="20" craft_area="ApexBloodlinesHelixReader"><ingredient name="ApexBloodlinesAnalysedHelixCore" count="1"/><ingredient name="resourceClayLump" count="25"/><ingredient name="resourceRockSmall" count="10"/></recipe>
+        <recipe name="ApexBloodlinesProtocolGaia" count="1" craft_time="20" craft_area="ApexBloodlinesHelixReader"><ingredient name="ApexBloodlinesAnalysedHelixCore" count="1"/><ingredient name="resourceYuccaFibers" count="25"/><ingredient name="resourceWood" count="20"/></recipe>
+        <recipe name="ApexBloodlinesProtocolForge" count="1" craft_time="20" craft_area="ApexBloodlinesHelixReader"><ingredient name="ApexBloodlinesAnalysedHelixCore" count="1"/><ingredient name="resourceScrapIron" count="50"/><ingredient name="resourceMechanicalParts" count="2"/></recipe>
+        <recipe name="ApexBloodlinesProtocolOrion" count="1" craft_time="20" craft_area="ApexBloodlinesHelixReader"><ingredient name="ApexBloodlinesAnalysedHelixCore" count="1"/><ingredient name="resourceElectricParts" count="5"/><ingredient name="resourceMechanicalParts" count="2"/></recipe>
 
-        <recipe name="ApexBloodlinesPrimitiveHelixReader" count="1" craft_time="30" tags="packMuleCrafting">
-            <ingredient name="resourceForgedIron" count="10"/>
-            <ingredient name="resourceElectricParts" count="6"/>
-            <ingredient name="resourceMechanicalParts" count="4"/>
-            <ingredient name="resourceDuctTape" count="2"/>
-        </recipe>
-
-        <recipe name="ApexBloodlinesAnalysedHelixCore" count="1" craft_time="15" craft_area="ApexBloodlinesHelixReader">
-            <ingredient name="ApexBloodlinesDormantHelixCore" count="1"/>
-        </recipe>
-
-        <recipe name="ApexBloodlinesProtocolTerra" count="1" craft_time="20" craft_area="ApexBloodlinesHelixReader">
-            <ingredient name="ApexBloodlinesAnalysedHelixCore" count="1"/>
-            <ingredient name="resourceClayLump" count="25"/>
-            <ingredient name="resourceRockSmall" count="10"/>
-        </recipe>
-        <recipe name="ApexBloodlinesProtocolGaia" count="1" craft_time="20" craft_area="ApexBloodlinesHelixReader">
-            <ingredient name="ApexBloodlinesAnalysedHelixCore" count="1"/>
-            <ingredient name="resourceYuccaFibers" count="25"/>
-            <ingredient name="resourceWood" count="20"/>
-        </recipe>
-        <recipe name="ApexBloodlinesProtocolForge" count="1" craft_time="20" craft_area="ApexBloodlinesHelixReader">
-            <ingredient name="ApexBloodlinesAnalysedHelixCore" count="1"/>
-            <ingredient name="resourceScrapIron" count="50"/>
-            <ingredient name="resourceMechanicalParts" count="2"/>
-        </recipe>
-        <recipe name="ApexBloodlinesProtocolOrion" count="1" craft_time="20" craft_area="ApexBloodlinesHelixReader">
-            <ingredient name="ApexBloodlinesAnalysedHelixCore" count="1"/>
-            <ingredient name="resourceElectricParts" count="5"/>
-            <ingredient name="resourceMechanicalParts" count="2"/>
-        </recipe>
+        <recipe name="ApexBloodlinesTerraStoneAnalysis" count="1" craft_time="30" craft_area="ApexBloodlinesHelixReader"><ingredient name="resourceClayLump" count="500"/><ingredient name="resourceRockSmall" count="500"/></recipe>
+        <recipe name="ApexBloodlinesTerraVeinSample" count="1" craft_time="45" craft_area="ApexBloodlinesHelixReader"><ingredient name="ApexBloodlinesTerraStoneAnalysis" count="1"/><ingredient name="resourceScrapIron" count="500"/><ingredient name="resourceCoal" count="250"/><ingredient name="resourceNitratePowder" count="250"/><ingredient name="resourceScrapLead" count="250"/></recipe>
+        <recipe name="ApexBloodlinesTerraFoundationCore" count="1" craft_time="60" craft_area="ApexBloodlinesHelixReader"><ingredient name="ApexBloodlinesTerraVeinSample" count="1"/><ingredient name="resourceForgedIron" count="50"/><ingredient name="resourceMechanicalParts" count="10"/><ingredient name="resourceRockSmall" count="1500"/></recipe>
+        <recipe name="ApexBloodlinesTerraSeismicCore" count="1" craft_time="90" craft_area="ApexBloodlinesHelixReader"><ingredient name="ApexBloodlinesTerraFoundationCore" count="1"/><ingredient name="resourceRockSmall" count="3000"/><ingredient name="resourceClayLump" count="1500"/><ingredient name="resourceScrapIron" count="1000"/></recipe>
+        <recipe name="ApexBloodlinesTerraGenomeMatrix" count="1" craft_time="120" craft_area="ApexBloodlinesHelixReader"><ingredient name="ApexBloodlinesTerraSeismicCore" count="1"/><ingredient name="resourceForgedIron" count="100"/><ingredient name="resourceMechanicalParts" count="20"/><ingredient name="resourceElectricParts" count="15"/></recipe>
+        <recipe name="ApexBloodlinesTerraIntegratedGenome" count="1" craft_time="180" craft_area="ApexBloodlinesHelixReader"><ingredient name="ApexBloodlinesTerraGenomeMatrix" count="1"/><ingredient name="resourceRockSmall" count="5000"/><ingredient name="resourceClayLump" count="2500"/><ingredient name="resourceScrapIron" count="2000"/></recipe>
     </append>
 </configs>
