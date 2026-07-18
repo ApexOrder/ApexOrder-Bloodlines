@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+    <append xpath="/buffs">
+        <buff name="buffApexBloodlinesTerraIntegrated" hidden="true" remove_on_death="false">
+            <stack_type value="ignore"/>
+            <duration value="0"/>
+            <effect_group name="TERRA Integration Active">
+                <passive_effect name="BlockDamage" operation="perc_add" value="0.05" tags="miningTool,shovel"/>
+            </effect_group>
+        </buff>
+    </append>
+</configs>
