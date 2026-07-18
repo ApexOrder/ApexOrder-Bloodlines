@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+    <append xpath="/items/item[property[@name='Tags' and (contains(@value,'miningTool') or contains(@value,'shovel'))]]">
+        <effect_group name="ApexBloodlinesTerraResonanceHarvest">
+            <triggered_effect trigger="onSelfHarvestBlock" action="AddItem" target="self" item="ApexBloodlinesTerraResonance" count="1">
+                <requirement name="HasBuff" buff="buffApexBloodlinesTerraIntegrated"/>
+                <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="18"/>
+            </triggered_effect>
+        </effect_group>
+    </append>
+</configs>
