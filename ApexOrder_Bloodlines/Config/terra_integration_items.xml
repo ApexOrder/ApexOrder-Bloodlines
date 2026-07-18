@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+    <append xpath="/items">
+        <item name="ApexBloodlinesTerraGenome">
+            <property name="Extends" value="modArmorCustomizedFittings"/>
+            <property name="CustomIcon" value="resourceClayLump"/>
+            <property name="CustomIconTint" value="54D68C"/>
+            <property name="DescriptionKey" value="ApexBloodlinesTerraGenomeDesc"/>
+            <property name="EconomicValue" value="0"/>
+            <property name="Stacknumber" value="1"/>
+            <effect_group name="ApexBloodlinesTerraGenomeIntegration">
+                <triggered_effect trigger="onSelfEquipStart" action="AddBuff" target="self" buff="buffApexBloodlinesTerraIntegrated"/>
+                <triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="buffApexBloodlinesTerraIntegrated"/>
+            </effect_group>
+        </item>
+        <item name="ApexBloodlinesTerraResonance">
+            <property name="Extends" value="resourceRockSmall"/>
+            <property name="CustomIcon" value="resourceRockSmall"/>
+            <property name="CustomIconTint" value="48E692"/>
+            <property name="DescriptionKey" value="ApexBloodlinesTerraResonanceDesc"/>
+            <property name="EconomicValue" value="0"/>
+            <property name="Stacknumber" value="6000"/>
+        </item>
+    </append>
+</configs>
