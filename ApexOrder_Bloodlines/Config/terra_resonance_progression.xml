@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+    <append xpath="/quests/quest[@id='quest_ApexBloodlines_Terra_01_Resonance']">
+        <reward type="Item" id="ApexBloodlinesTerraGenome" value="1"/>
+    </append>
+
+    <insertBefore xpath="/quests/quest[@id='quest_ApexBloodlines_Terra_02_FirstVein']/reward[1]"><objective type="FetchKeep" id="ApexBloodlinesTerraResonance" value="25" phase="1"/></insertBefore>
+    <insertBefore xpath="/quests/quest[@id='quest_ApexBloodlines_Terra_03_Foundations']/reward[1]"><objective type="FetchKeep" id="ApexBloodlinesTerraResonance" value="40" phase="1"/></insertBefore>
+    <insertBefore xpath="/quests/quest[@id='quest_ApexBloodlines_Terra_04_FoundationCore']/reward[1]"><objective type="FetchKeep" id="ApexBloodlinesTerraResonance" value="60" phase="1"/></insertBefore>
+    <insertBefore xpath="/quests/quest[@id='quest_ApexBloodlines_Terra_05_Pressure']/reward[1]"><objective type="FetchKeep" id="ApexBloodlinesTerraResonance" value="80" phase="2"/></insertBefore>
+    <insertBefore xpath="/quests/quest[@id='quest_ApexBloodlines_Terra_06_DeepVeins']/reward[1]"><objective type="FetchKeep" id="ApexBloodlinesTerraResonance" value="100" phase="1"/></insertBefore>
+    <insertBefore xpath="/quests/quest[@id='quest_ApexBloodlines_Terra_07_SeismicCore']/reward[1]"><objective type="FetchKeep" id="ApexBloodlinesTerraResonance" value="125" phase="1"/></insertBefore>
+    <insertBefore xpath="/quests/quest[@id='quest_ApexBloodlines_Terra_08_Stoneblood']/reward[1]"><objective type="FetchKeep" id="ApexBloodlinesTerraResonance" value="150" phase="2"/></insertBefore>
+    <insertBefore xpath="/quests/quest[@id='quest_ApexBloodlines_Terra_09_GreatExcavation']/reward[1]"><objective type="FetchKeep" id="ApexBloodlinesTerraResonance" value="180" phase="1"/></insertBefore>
+    <insertBefore xpath="/quests/quest[@id='quest_ApexBloodlines_Terra_10_GenomeMatrix']/reward[1]"><objective type="FetchKeep" id="ApexBloodlinesTerraResonance" value="225" phase="1"/></insertBefore>
+
+    <append xpath="/recipes/recipe[@name='ApexBloodlinesTerraArchive02']"><ingredient name="ApexBloodlinesTerraResonance" count="25"/></append>
+    <append xpath="/recipes/recipe[@name='ApexBloodlinesTerraArchive03']"><ingredient name="ApexBloodlinesTerraResonance" count="40"/></append>
+    <append xpath="/recipes/recipe[@name='ApexBloodlinesTerraArchive04']"><ingredient name="ApexBloodlinesTerraResonance" count="60"/></append>
+    <append xpath="/recipes/recipe[@name='ApexBloodlinesTerraArchive05']"><ingredient name="ApexBloodlinesTerraResonance" count="80"/></append>
+    <append xpath="/recipes/recipe[@name='ApexBloodlinesTerraArchive06']"><ingredient name="ApexBloodlinesTerraResonance" count="100"/></append>
+    <append xpath="/recipes/recipe[@name='ApexBloodlinesTerraArchive07']"><ingredient name="ApexBloodlinesTerraResonance" count="125"/></append>
+    <append xpath="/recipes/recipe[@name='ApexBloodlinesTerraArchive08']"><ingredient name="ApexBloodlinesTerraResonance" count="150"/></append>
+    <append xpath="/recipes/recipe[@name='ApexBloodlinesTerraArchive09']"><ingredient name="ApexBloodlinesTerraResonance" count="180"/></append>
+    <append xpath="/recipes/recipe[@name='ApexBloodlinesTerraArchive10']"><ingredient name="ApexBloodlinesTerraResonance" count="225"/></append>
+</configs>
