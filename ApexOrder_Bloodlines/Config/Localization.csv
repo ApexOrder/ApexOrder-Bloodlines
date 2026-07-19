@@ -6,27 +6,29 @@ quest_ApexBloodlines_Gaia_Group,quests,Quest,false,false,Bloodlines - GAIA
 quest_ApexBloodlines_Forge_Group,quests,Quest,false,false,Bloodlines - FORGE
 quest_ApexBloodlines_Orion_Group,quests,Quest,false,false,Bloodlines - ORION
 ApexBloodlinesResourceStick,items,Item,false,false,Stick
-ApexBloodlinesResourceStickDesc,items,Item,false,false,"A dry length of wood collected from bushes and shrubbery."
+ApexBloodlinesResourceStickDesc,items,Item,false,false,"A dry length of wood collected from bushes and shrubbery. Extra sticks can be cut from trees with an axe."
 ApexBloodlinesResourceRope,items,Item,false,false,Fibre Rope
 ApexBloodlinesResourceRopeDesc,items,Item,false,false,"Plant fibres twisted together into a crude binding material."
 ApexBloodlinesResourceBranch,items,Item,false,false,Branch
-ApexBloodlinesResourceBranchDesc,items,Item,false,false,"A sturdy branch cut from a tree using the Crude Axe."
+ApexBloodlinesResourceBranchDesc,items,Item,false,false,"A sturdy branch obtainable only by cutting trees with an axe."
 ApexBloodlinesResourceBark,items,Item,false,false,Tree Bark
-ApexBloodlinesResourceBarkDesc,items,Item,false,false,"Thick bark stripped from a tree using the Crude Axe."
+ApexBloodlinesResourceBarkDesc,items,Item,false,false,"Thick bark obtainable only by cutting trees with an axe."
 ApexBloodlinesResourceSharpStone,items,Item,false,false,Sharp Stone
-ApexBloodlinesResourceSharpStoneDesc,items,Item,false,false,"A fractured piece of stone with a usable cutting edge."
+ApexBloodlinesResourceSharpStoneDesc,items,Item,false,false,"A fractured piece of stone recovered while mining rock with a pick or auger."
 ApexBloodlinesToolCrudeAxe,items,Item,false,false,Crude Axe
-ApexBloodlinesToolCrudeAxeDesc,items,Item,false,false,"A primitive axe made from rope, sticks and stone. It can strip bark and cut branches from trees."
+ApexBloodlinesToolCrudeAxeDesc,items,Item,false,false,"A disposable quality-one axe made from rope, sticks and stone. It is weak and cannot be repaired, but can strip bark and cut branches from trees."
+ApexBloodlinesToolCrudePick,items,Item,false,false,Crude Pick
+ApexBloodlinesToolCrudePickDesc,items,Item,false,false,"A disposable quality-one pick made from rope, sticks and stone. It is weak and cannot be repaired, but can recover sharp stone from rock."
 ApexBloodlinesWeaponCrudePike,items,Item,false,false,Crude Pike
 ApexBloodlinesWeaponCrudePikeDesc,items,Item,false,false,"A long branch tipped with sharp stone and secured with fibre rope."
 ApexBloodlinesArmorBarkHelmet,items,Item,false,false,Bark Hood
-ApexBloodlinesArmorBarkHelmetDesc,items,Item,false,false,"Layered bark protecting the head."
+ApexBloodlinesArmorBarkHelmetDesc,items,Item,false,false,"Disposable quality-one layered bark protecting the head. It cannot be repaired."
 ApexBloodlinesArmorBarkOutfit,items,Item,false,false,Bark Outfit
-ApexBloodlinesArmorBarkOutfitDesc,items,Item,false,false,"Overlapping bark panels protecting the body."
+ApexBloodlinesArmorBarkOutfitDesc,items,Item,false,false,"Disposable quality-one bark panels protecting the body. They cannot be repaired."
 ApexBloodlinesArmorBarkGloves,items,Item,false,false,Bark Gloves
-ApexBloodlinesArmorBarkGlovesDesc,items,Item,false,false,"Crude bark guards protecting the hands."
+ApexBloodlinesArmorBarkGlovesDesc,items,Item,false,false,"Disposable quality-one bark guards protecting the hands. They cannot be repaired."
 ApexBloodlinesArmorBarkBoots,items,Item,false,false,Bark Boots
-ApexBloodlinesArmorBarkBootsDesc,items,Item,false,false,"Layered bark and fibre bindings protecting the feet."
+ApexBloodlinesArmorBarkBootsDesc,items,Item,false,false,"Disposable quality-one bark and fibre bindings protecting the feet. They cannot be repaired."
 ApexBloodlinesTransmission,items,Item,false,false,Encrypted Bloodlines Transmission
 ApexBloodlinesTransmissionDesc,items,Item,false,false,"A fragmented transmission containing the final survival protocol."
 ApexBloodlinesDormantHelixCore,items,Item,false,false,Dormant Helix Core
@@ -72,11 +74,11 @@ quest_ApexBloodlines_02_name,quests,Quest,false,false,PROTOCOL 02 - WOVEN FOUNDA
 quest_ApexBloodlines_02_subtitle,quests,Quest,false,false,Process Plant Fibres
 quest_ApexBloodlines_02_description,quests,Quest,false,false,"Twist gathered plant fibres into crude rope."
 quest_ApexBloodlines_03_name,quests,Quest,false,false,PROTOCOL 03 - CRUDE INDUSTRY
-quest_ApexBloodlines_03_subtitle,quests,Quest,false,false,Construct a Crude Axe
-quest_ApexBloodlines_03_description,quests,Quest,false,false,"Combine rope, sticks and stone to construct a crude axe."
+quest_ApexBloodlines_03_subtitle,quests,Quest,false,false,Construct a Crude Axe and Crude Pick
+quest_ApexBloodlines_03_description,quests,Quest,false,false,"Use rope, sticks and stone to construct a disposable Crude Axe and Crude Pick. The axe gathers wood-derived materials; the pick recovers Sharp Stone from rock."
 quest_ApexBloodlines_04_name,quests,Quest,false,false,PROTOCOL 04 - PRIMITIVE PROTECTION
 quest_ApexBloodlines_04_subtitle,quests,Quest,false,false,Arm and Protect the Body
-quest_ApexBloodlines_04_description,quests,Quest,false,false,"Use the Crude Axe to gather materials, then construct a Crude Pike and bark armour."
+quest_ApexBloodlines_04_description,quests,Quest,false,false,"Use an axe on trees to gather bark, branches and extra sticks. Use a pick on rock to recover Sharp Stone. Construct a Crude Pike and a complete set of disposable bark armour."
 quest_ApexBloodlines_05_name,quests,Quest,false,false,PROTOCOL 05 - ESTABLISH SHELTER
 quest_ApexBloodlines_05_subtitle,quests,Quest,false,false,Create a Safe Location
 quest_ApexBloodlines_05_description,quests,Quest,false,false,"Craft and place a bedroll and campfire."
