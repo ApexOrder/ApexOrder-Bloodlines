@@ -12,9 +12,9 @@
         <drop event="Harvest" name="ApexBloodlinesResourceStick" count="3" prob="0.75" tag="oreWoodHarvest"/>
     </append>
 
-    <!-- Sharp stone only drops from stone-bearing blocks when using a pick or auger stone-harvest tag. -->
+    <!-- Sharp stone only drops from blocks that already yield small stone, and only with a Bloodlines mining tool category. -->
     <append xpath="/blocks/block[drop[@event='Harvest' and @name='resourceRockSmall']]">
-        <drop event="Harvest" name="ApexBloodlinesResourceSharpStone" count="1" prob="0.22" tag="oreStoneHarvest"/>
+        <drop event="Harvest" name="ApexBloodlinesResourceSharpStone" count="1" prob="0.30" tag="allHarvest" tool_category="ApexBloodlinesMining"/>
     </append>
 
     <append xpath="/blocks">
