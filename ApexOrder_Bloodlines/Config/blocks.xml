@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configs>
-    <!-- Bushes and shrubbery provide sticks. -->
+    <!-- Bushes and shrubbery provide starter sticks. -->
     <append xpath="/blocks/block[contains(translate(@name,'BUSHSHRUB','bushshrub'),'bush') or contains(translate(@name,'BUSHSHRUB','bushshrub'),'shrub')]">
-        <drop event="Harvest" name="ApexBloodlinesResourceStick" count="1" prob="0.40" tag="allHarvest"/>
+        <drop event="Harvest" name="ApexBloodlinesResourceStick" count="1" prob="0.55" tag="allHarvest"/>
     </append>
 
-    <!-- Add Bloodlines harvests only to real wood-yielding trees. -->
+    <!-- Bark, branches and extra sticks only drop when a proper axe harvest tag is used. -->
     <append xpath="/blocks/block[drop[@event='Harvest' and @name='resourceWood' and contains(@tag,'oreWoodHarvest')]]">
-        <drop event="Harvest" name="ApexBloodlinesResourceBark" count="8" tag="ApexBloodlinesAxeHarvest"/>
-        <drop event="Harvest" name="ApexBloodlinesResourceBranch" count="2" tag="ApexBloodlinesAxeHarvest"/>
-        <drop event="Harvest" name="ApexBloodlinesResourceStick" count="2" tag="ApexBloodlinesAxeHarvest"/>
+        <drop event="Harvest" name="ApexBloodlinesResourceBark" count="10" prob="0.85" tag="oreWoodHarvest"/>
+        <drop event="Harvest" name="ApexBloodlinesResourceBranch" count="3" prob="0.60" tag="oreWoodHarvest"/>
+        <drop event="Harvest" name="ApexBloodlinesResourceStick" count="3" prob="0.75" tag="oreWoodHarvest"/>
     </append>
 
-    <!-- Sharp stone is recovered while mining stone-bearing terrain and boulders. -->
+    <!-- Sharp stone only drops from stone-bearing blocks when using a pick or auger stone-harvest tag. -->
     <append xpath="/blocks/block[drop[@event='Harvest' and @name='resourceRockSmall']]">
-        <drop event="Harvest" name="ApexBloodlinesResourceSharpStone" count="1" prob="0.12" tag="allHarvest"/>
+        <drop event="Harvest" name="ApexBloodlinesResourceSharpStone" count="1" prob="0.22" tag="oreStoneHarvest"/>
     </append>
 
     <append xpath="/blocks">
