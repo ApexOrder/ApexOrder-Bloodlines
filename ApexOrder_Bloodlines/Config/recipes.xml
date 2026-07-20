@@ -1,4 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configs>
-    <!-- Bloodlines recipes intentionally removed while progression is rebuilt around quest unlocks. -->
+    <append xpath="/recipes">
+        <recipe name="ApexBloodlinesResourceRope" count="1" craft_time="2">
+            <ingredient name="resourceYuccaFibers" count="5"/>
+        </recipe>
+        <recipe name="ApexBloodlinesToolCrudeAxe" count="1" craft_time="6">
+            <ingredient name="ApexBloodlinesResourceStick" count="3"/>
+            <ingredient name="ApexBloodlinesResourceRope" count="2"/>
+            <ingredient name="ApexBloodlinesResourceSharpStone" count="2"/>
+        </recipe>
+        <recipe name="ApexBloodlinesToolCrudePick" count="1" craft_time="6">
+            <ingredient name="ApexBloodlinesResourceStick" count="3"/>
+            <ingredient name="ApexBloodlinesResourceRope" count="2"/>
+            <ingredient name="ApexBloodlinesResourceSharpStone" count="3"/>
+        </recipe>
+        <recipe name="ApexBloodlinesWeaponCrudePike" count="1" craft_time="6">
+            <ingredient name="ApexBloodlinesResourceBranch" count="1"/>
+            <ingredient name="ApexBloodlinesResourceRope" count="2"/>
+            <ingredient name="ApexBloodlinesResourceSharpStone" count="2"/>
+        </recipe>
+        <recipe name="ApexBloodlinesArmorBarkHelmet" count="1" craft_time="5">
+            <ingredient name="ApexBloodlinesResourceBark" count="3"/>
+            <ingredient name="ApexBloodlinesResourceRope" count="2"/>
+        </recipe>
+        <recipe name="ApexBloodlinesArmorBarkOutfit" count="1" craft_time="8">
+            <ingredient name="ApexBloodlinesResourceBark" count="8"/>
+            <ingredient name="ApexBloodlinesResourceRope" count="4"/>
+        </recipe>
+        <recipe name="ApexBloodlinesArmorBarkGloves" count="1" craft_time="5">
+            <ingredient name="ApexBloodlinesResourceBark" count="4"/>
+            <ingredient name="ApexBloodlinesResourceRope" count="2"/>
+        </recipe>
+        <recipe name="ApexBloodlinesArmorBarkBoots" count="1" craft_time="5">
+            <ingredient name="ApexBloodlinesResourceBark" count="4"/>
+            <ingredient name="ApexBloodlinesResourceRope" count="2"/>
+        </recipe>
+        <recipe name="ApexBloodlinesPrimitiveHelixReader" count="1" craft_time="30">
+            <ingredient name="resourceScrapIron" count="30"/>
+            <ingredient name="resourceMechanicalParts" count="4"/>
+            <ingredient name="resourceElectricParts" count="4"/>
+            <ingredient name="resourceDuctTape" count="3"/>
+        </recipe>
+        <recipe name="ApexBloodlinesAnalysedHelixCore" count="1" craft_area="ApexBloodlinesHelixReader" craft_time="45">
+            <ingredient name="ApexBloodlinesDormantHelixCore" count="1"/>
+            <ingredient name="resourceElectricParts" count="2"/>
+            <ingredient name="resourceAcid" count="1"/>
+        </recipe>
+    </append>
 </configs>
